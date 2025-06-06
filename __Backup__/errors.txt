@@ -1,0 +1,623 @@
+ 2025-06-01T04:42:09.59+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:09,595 - INFO - All Submitted files processed: 3/3 downloaded successfully
+   2025-06-01T04:42:09.59+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:09,597 - INFO - Step 3: Downloaded files: ['/home/vcap/app/Documents/SCB_InvestorPresentation_1Q25.pdf', '/home/vcap/app/Documents/generated.pdf', '/home/vcap/app/Documents/SCB_PressRelease_1Q25.pdf']
+   2025-06-01T04:42:09.59+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:09,597 - INFO - Step 6: Downloaded 3 files: ['/home/vcap/app/Documents/SCB_InvestorPresentation_1Q25.pdf', '/home/vcap/app/Documents/generated.pdf', '/home/vcap/app/Documents/SCB_PressRelease_1Q25.pdf']
+   2025-06-01T04:42:09.59+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:09,597 - INFO - Step 7: Categorizing files
+   2025-06-01T04:42:09.59+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:09,597 - INFO - Step 8: Categorized files - Transcripts: 0, Non-Transcripts: 3, Images: 0
+   2025-06-01T04:42:09.59+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:09,597 - INFO - Step 9: Processing file: /home/vcap/app/Documents/SCB_InvestorPresentation_1Q25.pdf
+   2025-06-01T04:42:09.59+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:09 - earnings_analysis - INFO - embedding_storer.py:279 - Processing files from /home/vcap/app/Documents with model: text-embedding-3-large
+   2025-06-01T04:42:09.59+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:09,597 - INFO - Processing files from /home/vcap/app/Documents with model: text-embedding-3-large
+   2025-06-01T04:42:09.59+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:09 - earnings_analysis - INFO - embedding_storer.py:47 - Fetching existing file info from all tables
+   2025-06-01T04:42:09.59+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:09,597 - INFO - Fetching existing file info from all tables
+   2025-06-01T04:42:09.64+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:09 - earnings_analysis - INFO - embedding_storer.py:74 - Found 1 unique files across all tables
+   2025-06-01T04:42:09.64+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:09,645 - INFO - Found 1 unique files across all tables
+   2025-06-01T04:42:09.64+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:09 - earnings_analysis - INFO - embedding_storer.py:319 - New PDF file detected: SCB_InvestorPresentation_1Q25.pdf
+   2025-06-01T04:42:09.64+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:09,649 - INFO - New PDF file detected: SCB_InvestorPresentation_1Q25.pdf
+   2025-06-01T04:42:09.65+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:09 - earnings_analysis - INFO - embedding_storer.py:319 - New PDF file detected: generated.pdf
+   2025-06-01T04:42:09.65+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:09,649 - INFO - New PDF file detected: generated.pdf
+   2025-06-01T04:42:09.65+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:09 - earnings_analysis - INFO - embedding_storer.py:319 - New PDF file detected: SCB_PressRelease_1Q25.pdf
+   2025-06-01T04:42:09.65+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:09,651 - INFO - New PDF file detected: SCB_PressRelease_1Q25.pdf
+   2025-06-01T04:42:09.65+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:09 - earnings_analysis - INFO - embedding_storer.py:339 - Found 3 PDF files, 3 need processing
+   2025-06-01T04:42:09.65+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:09,652 - INFO - Found 3 PDF files, 3 need processing
+   2025-06-01T04:42:09.65+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:09 - earnings_analysis - INFO - embedding_storer.py:340 - Found 0 Excel files, 0 need processing
+   2025-06-01T04:42:09.65+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:09,652 - INFO - Found 0 Excel files, 0 need processing
+   2025-06-01T04:42:09.65+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:09 - earnings_analysis - INFO - embedding_storer.py:349 - Embedding_Storer: AIC {"aic_base_url": "https://api.ai.prod-ap11.ap-southeast-1.aws.ml.hana.ondemand.com/v2", "clientid": "sb-62c837c5-218b-4736-bc14-5852a02a313f!b5156|xsuaa_std!b15301", "clientsecret": "03019e1c-4ec9-4c57-8968-4ce79a1f572e$KMcCBVldB7zuqgAFxdvCS3yfog9hhFwrjzQv8mLPTpE=", "aic_auth_url": "https://core-foundational-12982zqn.authentication.ap11.hana.ondemand.com/oauth/token", "resource_group": "default", "ORCHESTRATION_SERVICE_URL": "https://api.ai.prod-ap11.ap-southeast-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d53b8af17648a85c"}
+   2025-06-01T04:42:09.65+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:09,652 - INFO - Embedding_Storer: AIC {"aic_base_url": "https://api.ai.prod-ap11.ap-southeast-1.aws.ml.hana.ondemand.com/v2", "clientid": "sb-62c837c5-218b-4736-bc14-5852a02a313f!b5156|xsuaa_std!b15301", "clientsecret": "03019e1c-4ec9-4c57-8968-4ce79a1f572e$KMcCBVldB7zuqgAFxdvCS3yfog9hhFwrjzQv8mLPTpE=", "aic_auth_url": "https://core-foundational-12982zqn.authentication.ap11.hana.ondemand.com/oauth/token", "resource_group": "default", "ORCHESTRATION_SERVICE_URL": "https://api.ai.prod-ap11.ap-southeast-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d53b8af17648a85c"}
+   2025-06-01T04:42:09.70+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:09 - earnings_analysis - INFO - embedding_storer.py:360 - Embedding model initialized successfully
+   2025-06-01T04:42:09.70+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:09,701 - INFO - Embedding model initialized successfully
+   2025-06-01T04:42:09.70+0000 [APP/PROC/WEB/0] OUT Found 3 PDFs
+   2025-06-01T04:42:09.70+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:09 - earnings_analysis - INFO - pdf_processor.py:270 - Processing PDF: SCB_InvestorPresentation_1Q25.pdf
+   2025-06-01T04:42:09.70+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:09,702 - INFO - Processing PDF: SCB_InvestorPresentation_1Q25.pdf
+   2025-06-01T04:42:09.70+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:09 - earnings_analysis - INFO - pdf_processor.py:109 - Processing PDF: /home/vcap/app/Documents/SCB_InvestorPresentation_1Q25.pdf
+   2025-06-01T04:42:09.70+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:09,703 - INFO - Processing PDF: /home/vcap/app/Documents/SCB_InvestorPresentation_1Q25.pdf
+   2025-06-01T04:42:11.61+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:11 - earnings_analysis - INFO - pdf_processor.py:120 - Extracted 28 pages from SCB_InvestorPresentation_1Q25.pdf, Sample: PUBLIC
+   2025-06-01T04:42:11.61+0000 [APP/PROC/WEB/0] ERR Q1’25 results presentation
+   2025-06-01T04:42:11.61+0000 [APP/PROC/WEB/0] ERR 2 May 2025
+   2025-06-01T04:42:11.61+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:11,611 - INFO - Extracted 28 pages from SCB_InvestorPresentation_1Q25.pdf, Sample: PUBLIC
+   2025-06-01T04:42:11.61+0000 [APP/PROC/WEB/0] ERR Q1’25 results presentation
+   2025-06-01T04:42:11.61+0000 [APP/PROC/WEB/0] ERR 2 May 2025
+   2025-06-01T04:42:16.53+0000 [APP/PROC/WEB/0] ERR /home/vcap/deps/0/python/lib/python3.10/site-packages/camelot/parsers/base.py:238: UserWarning: No tables found in table area (0, 0, 959.0, 540.0)
+   2025-06-01T04:42:16.53+0000 [APP/PROC/WEB/0] ERR cols, rows, v_s, h_s = self._generate_columns_and_rows(bbox, user_cols)
+   2025-06-01T04:42:16.74+0000 [APP/PROC/WEB/0] ERR /home/vcap/deps/0/python/lib/python3.10/site-packages/camelot/parsers/base.py:238: UserWarning: No tables found in table area (94.389, 354.57899999999995, 920.9295000000001, 503.5678125)
+   2025-06-01T04:42:16.74+0000 [APP/PROC/WEB/0] ERR cols, rows, v_s, h_s = self._generate_columns_and_rows(bbox, user_cols)
+   2025-06-01T04:42:18.16+0000 [APP/PROC/WEB/0] ERR /home/vcap/deps/0/python/lib/python3.10/site-packages/camelot/parsers/base.py:238: UserWarning: No tables found in table area (0, 0, 959.0, 540.0)
+   2025-06-01T04:42:18.16+0000 [APP/PROC/WEB/0] ERR cols, rows, v_s, h_s = self._generate_columns_and_rows(bbox, user_cols)
+   2025-06-01T04:42:22.37+0000 [APP/PROC/WEB/0] ERR /home/vcap/deps/0/python/lib/python3.10/site-packages/camelot/parsers/base.py:238: UserWarning: No tables found in table area (0, 0, 959.0, 540.0)
+   2025-06-01T04:42:22.37+0000 [APP/PROC/WEB/0] ERR cols, rows, v_s, h_s = self._generate_columns_and_rows(bbox, user_cols)
+   2025-06-01T04:42:27.12+0000 [APP/PROC/WEB/0] ERR /home/vcap/deps/0/python/lib/python3.10/site-packages/camelot/parsers/base.py:238: UserWarning: No tables found in table area (39.06999999999999, 70.669, 875.8335000000013, 550.1891209090909)
+   2025-06-01T04:42:27.12+0000 [APP/PROC/WEB/0] ERR cols, rows, v_s, h_s = self._generate_columns_and_rows(bbox, user_cols)
+   2025-06-01T04:42:27.13+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:27 - earnings_analysis - WARNING - pdf_processor.py:170 - Tabula-py failed for /home/vcap/app/Documents/SCB_InvestorPresentation_1Q25.pdf: No JVM shared library file (libjvm.so) found. Try setting up the JAVA_HOME environment variable properly.
+   2025-06-01T04:42:27.13+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:27,138 - WARNING - Tabula-py failed for /home/vcap/app/Documents/SCB_InvestorPresentation_1Q25.pdf: No JVM shared library file (libjvm.so) found. Try setting up the JAVA_HOME environment variable properly.
+   2025-06-01T04:42:27.14+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:27 - earnings_analysis - INFO - pdf_processor.py:186 - Processed 178 chunks from SCB_InvestorPresentation_1Q25.pdf
+   2025-06-01T04:42:27.14+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:27,144 - INFO - Processed 178 chunks from SCB_InvestorPresentation_1Q25.pdf
+   2025-06-01T04:42:27.17+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:27 - earnings_analysis - INFO - pdf_processor.py:244 - Using model text-embedding-3-large for SCB_InvestorPresentation_1Q25.pdf
+   2025-06-01T04:42:27.17+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:27,174 - INFO - Using model text-embedding-3-large for SCB_InvestorPresentation_1Q25.pdf
+   2025-06-01T04:42:27.17+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:27 - earnings_analysis - INFO - pdf_processor.py:197 - Creating embeddings for 178 docs with text-embedding-3-large
+   2025-06-01T04:42:27.17+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:27,174 - INFO - Creating embeddings for 178 docs with text-embedding-3-large
+   2025-06-01T04:42:27.17+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:27 - earnings_analysis - INFO - pdf_processor.py:201 - PDF Processor: AIC, {AIC_CREDENTIALS}
+   2025-06-01T04:42:27.17+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:27,175 - INFO - PDF Processor: AIC, {AIC_CREDENTIALS}
+   2025-06-01T04:42:27.22+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:27 - earnings_analysis - INFO - pdf_processor.py:214 - Embedding model initialized: client=<gen_ai_hub.proxy.native.openai.clients.Embeddings object at 0x7f635c4b6e00> async_client=<gen_ai_hub.proxy.native.openai.clients.AsyncEmbeddings object at 0x7f635c4b4760> model='text-embedding-3-large' dimensions=None deployment='text-embedding-ada-002' openai_api_version=None openai_api_base=None openai_api_type=None openai_proxy=None embedding_ctx_length=8191 openai_api_key=SecretStr('**********') openai_organization=None allowed_special=None disallowed_special=None chunk_size=16 max_retries=2 request_timeout=None headers=None tiktoken_enabled=True tiktoken_model_name='text-embedding-ada-002' show_progress_bar=False model_kwargs={} skip_empty=False default_headers=None default_query=None retry_min_seconds=4 retry_max_seconds=20 http_client=None http_async_client=None check_embedding_ctx_length=True proxy_client=GenAIHubProxyClient(base_url='https://api.ai.prod-ap11.ap-southeast-1.aws.ml.hana.ondemand.com/v2', auth_url='https://core-foundational-12982zqn.authentication.ap11.hana.ondemand.com/oauth/token', client_id='sb-62c837c5-218b-4736-bc14-5852a02a313f!b5156|xsuaa_std!b15301', client_secret='03019e1c-4ec9-4c57-8968-4ce79a1f572e$KMcCBVldB7zuqgAFxdvCS3yfog9hhFwrjzQv8mLPTpE=', resource_group='default', ai_core_client=<ai_core_sdk.ai_core_v2_client.AICoreV2Client object at 0x7f636e8830a0>) deployment_id='d07481757a2f3028' config_name='text-embedding-3-large_autogenerated' config_id='c880f6a8-1d06-44f0-ad1f-e5450bae45b3' proxy_model_name='text-embedding-3-large'
+   2025-06-01T04:42:27.22+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:27,224 - INFO - Embedding model initialized: client=<gen_ai_hub.proxy.native.openai.clients.Embeddings object at 0x7f635c4b6e00> async_client=<gen_ai_hub.proxy.native.openai.clients.AsyncEmbeddings object at 0x7f635c4b4760> model='text-embedding-3-large' dimensions=None deployment='text-embedding-ada-002' openai_api_version=None openai_api_base=None openai_api_type=None openai_proxy=None embedding_ctx_length=8191 openai_api_key=SecretStr('**********') openai_organization=None allowed_special=None disallowed_special=None chunk_size=16 max_retries=2 request_timeout=None headers=None tiktoken_enabled=True tiktoken_model_name='text-embedding-ada-002' show_progress_bar=False model_kwargs={} skip_empty=False default_headers=None default_query=None retry_min_seconds=4 retry_max_seconds=20 http_client=None http_async_client=None check_embedding_ctx_length=True proxy_client=GenAIHubProxyClient(base_url='https://api.ai.prod-ap11.ap-southeast-1.aws.ml.hana.ondemand.com/v2', auth_url='https://core-foundational-12982zqn.authentication.ap11.hana.ondemand.com/oauth/token', client_id='sb-62c837c5-218b-4736-bc14-5852a02a313f!b5156|xsuaa_std!b15301', client_secret='03019e1c-4ec9-4c57-8968-4ce79a1f572e$KMcCBVldB7zuqgAFxdvCS3yfog9hhFwrjzQv8mLPTpE=', resource_group='default', ai_core_client=<ai_core_sdk.ai_core_v2_client.AICoreV2Client object at 0x7f636e8830a0>) deployment_id='d07481757a2f3028' config_name='text-embedding-3-large_autogenerated' config_id='c880f6a8-1d06-44f0-ad1f-e5450bae45b3' proxy_model_name='text-embedding-3-large'
+   2025-06-01T04:42:27.22+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:27 - earnings_analysis - INFO - pdf_processor.py:222 - Processing batch 1, size: 178, Sample: PUBLIC
+   2025-06-01T04:42:27.22+0000 [APP/PROC/WEB/0] ERR Q1’25 results presentation
+   2025-06-01T04:42:27.22+0000 [APP/PROC/WEB/0] ERR 2 May 2025
+   2025-06-01T04:42:27.22+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:27,224 - INFO - Processing batch 1, size: 178, Sample: PUBLIC
+   2025-06-01T04:42:27.22+0000 [APP/PROC/WEB/0] ERR Q1’25 results presentation
+   2025-06-01T04:42:27.22+0000 [APP/PROC/WEB/0] ERR 2 May 2025
+   2025-06-01T04:42:28.44+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:28,440 - INFO - HTTP Request: POST https://api.ai.prod-ap11.ap-southeast-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d07481757a2f3028/embeddings?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+   2025-06-01T04:42:29.48+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:29,488 - INFO - HTTP Request: POST https://api.ai.prod-ap11.ap-southeast-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d07481757a2f3028/embeddings?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+   2025-06-01T04:42:30.63+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:30,633 - INFO - HTTP Request: POST https://api.ai.prod-ap11.ap-southeast-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d07481757a2f3028/embeddings?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+   2025-06-01T04:42:31.86+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:31,862 - INFO - HTTP Request: POST https://api.ai.prod-ap11.ap-southeast-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d07481757a2f3028/embeddings?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+   2025-06-01T04:42:32.78+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:32,789 - INFO - HTTP Request: POST https://api.ai.prod-ap11.ap-southeast-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d07481757a2f3028/embeddings?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+   2025-06-01T04:42:33.65+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:33,657 - INFO - HTTP Request: POST https://api.ai.prod-ap11.ap-southeast-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d07481757a2f3028/embeddings?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+   2025-06-01T04:42:34.54+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:34,542 - INFO - HTTP Request: POST https://api.ai.prod-ap11.ap-southeast-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d07481757a2f3028/embeddings?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+   2025-06-01T04:42:35.54+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:35,546 - INFO - HTTP Request: POST https://api.ai.prod-ap11.ap-southeast-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d07481757a2f3028/embeddings?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+   2025-06-01T04:42:36.56+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:36,560 - INFO - HTTP Request: POST https://api.ai.prod-ap11.ap-southeast-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d07481757a2f3028/embeddings?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+   2025-06-01T04:42:37.57+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:37,571 - INFO - HTTP Request: POST https://api.ai.prod-ap11.ap-southeast-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d07481757a2f3028/embeddings?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+   2025-06-01T04:42:38.57+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:38,573 - INFO - HTTP Request: POST https://api.ai.prod-ap11.ap-southeast-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d07481757a2f3028/embeddings?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+   2025-06-01T04:42:39.15+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:39,154 - INFO - HTTP Request: POST https://api.ai.prod-ap11.ap-southeast-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d07481757a2f3028/embeddings?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+   2025-06-01T04:42:39.15+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:39 - earnings_analysis - INFO - pdf_processor.py:228 - Batch 1 completed
+   2025-06-01T04:42:39.15+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:39,156 - INFO - Batch 1 completed
+   2025-06-01T04:42:39.15+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:39 - earnings_analysis - INFO - pdf_processor.py:231 - Created embeddings for 178 docs
+   2025-06-01T04:42:39.15+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:39,156 - INFO - Created embeddings for 178 docs
+   2025-06-01T04:42:39.15+0000 [APP/PROC/WEB/0] OUT ✅ Created 178 embeddings for SCB_InvestorPresentation_1Q25.pdf
+   2025-06-01T04:42:39.15+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:39 - earnings_analysis - INFO - pdf_processor.py:270 - Processing PDF: generated.pdf
+   2025-06-01T04:42:39.15+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:39,157 - INFO - Processing PDF: generated.pdf
+   2025-06-01T04:42:39.15+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:39 - earnings_analysis - INFO - pdf_processor.py:109 - Processing PDF: /home/vcap/app/Documents/generated.pdf
+   2025-06-01T04:42:39.15+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:39,157 - INFO - Processing PDF: /home/vcap/app/Documents/generated.pdf
+   2025-06-01T04:42:39.23+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:39 - earnings_analysis - INFO - pdf_processor.py:120 - Extracted 2 pages from generated.pdf, Sample: Top  5 Companies  by Earnings
+   2025-06-01T04:42:39.23+0000 [APP/PROC/WEB/0] ERR Rank CompanyQ4 2024
+   2025-06-01T04:42:39.23+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:39,238 - INFO - Extracted 2 pages from generated.pdf, Sample: Top  5 Companies  by Earnings
+   2025-06-01T04:42:39.23+0000 [APP/PROC/WEB/0] ERR Rank CompanyQ4 2024
+   2025-06-01T04:42:39.24+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:39,241 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+   2025-06-01T04:42:39.24+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:39,241 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+   2025-06-01T04:42:39.39+0000 [APP/PROC/WEB/0] ERR [2025-06-01 04:42:39 +0000] [8] [CRITICAL] WORKER TIMEOUT (pid:321)
+   2025-06-01T04:42:39.47+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:39,478 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+   2025-06-01T04:42:39.47+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:39,479 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+   2025-06-01T04:42:39.48+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:39,485 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+   2025-06-01T04:42:40.16+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:40,164 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+   2025-06-01T04:42:40.18+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:40 - earnings_analysis - WARNING - pdf_processor.py:170 - Tabula-py failed for /home/vcap/app/Documents/generated.pdf: No JVM shared library file (libjvm.so) found. Try setting up the JAVA_HOME environment variable properly.
+   2025-06-01T04:42:40.18+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:40,183 - WARNING - Tabula-py failed for /home/vcap/app/Documents/generated.pdf: No JVM shared library file (libjvm.so) found. Try setting up the JAVA_HOME environment variable properly.
+   2025-06-01T04:42:40.18+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:40 - earnings_analysis - INFO - pdf_processor.py:186 - Processed 7 chunks from generated.pdf
+   2025-06-01T04:42:40.18+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:40,183 - INFO - Processed 7 chunks from generated.pdf
+   2025-06-01T04:42:40.18+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:40 - earnings_analysis - INFO - pdf_processor.py:244 - Using model text-embedding-3-large for generated.pdf
+   2025-06-01T04:42:40.18+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:40,184 - INFO - Using model text-embedding-3-large for generated.pdf
+   2025-06-01T04:42:40.18+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:40 - earnings_analysis - INFO - pdf_processor.py:197 - Creating embeddings for 7 docs with text-embedding-3-large
+   2025-06-01T04:42:40.18+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:40,184 - INFO - Creating embeddings for 7 docs with text-embedding-3-large
+   2025-06-01T04:42:40.18+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:40 - earnings_analysis - INFO - pdf_processor.py:201 - PDF Processor: AIC, {AIC_CREDENTIALS}
+   2025-06-01T04:42:40.18+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:40,184 - INFO - PDF Processor: AIC, {AIC_CREDENTIALS}
+   2025-06-01T04:42:40.23+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:40 - earnings_analysis - INFO - pdf_processor.py:214 - Embedding model initialized: client=<gen_ai_hub.proxy.native.openai.clients.Embeddings object at 0x7f63577754e0> async_client=<gen_ai_hub.proxy.native.openai.clients.AsyncEmbeddings object at 0x7f63577753c0> model='text-embedding-3-large' dimensions=None deployment='text-embedding-ada-002' openai_api_version=None openai_api_base=None openai_api_type=None openai_proxy=None embedding_ctx_length=8191 openai_api_key=SecretStr('**********') openai_organization=None allowed_special=None disallowed_special=None chunk_size=16 max_retries=2 request_timeout=None headers=None tiktoken_enabled=True tiktoken_model_name='text-embedding-ada-002' show_progress_bar=False model_kwargs={} skip_empty=False default_headers=None default_query=None retry_min_seconds=4 retry_max_seconds=20 http_client=None http_async_client=None check_embedding_ctx_length=True proxy_client=GenAIHubProxyClient(base_url='https://api.ai.prod-ap11.ap-southeast-1.aws.ml.hana.ondemand.com/v2', auth_url='https://core-foundational-12982zqn.authentication.ap11.hana.ondemand.com/oauth/token', client_id='sb-62c837c5-218b-4736-bc14-5852a02a313f!b5156|xsuaa_std!b15301', client_secret='03019e1c-4ec9-4c57-8968-4ce79a1f572e$KMcCBVldB7zuqgAFxdvCS3yfog9hhFwrjzQv8mLPTpE=', resource_group='default', ai_core_client=<ai_core_sdk.ai_core_v2_client.AICoreV2Client object at 0x7f636e8830a0>) deployment_id='d07481757a2f3028' config_name='text-embedding-3-large_autogenerated' config_id='c880f6a8-1d06-44f0-ad1f-e5450bae45b3' proxy_model_name='text-embedding-3-large'
+   2025-06-01T04:42:40.23+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:40,232 - INFO - Embedding model initialized: client=<gen_ai_hub.proxy.native.openai.clients.Embeddings object at 0x7f63577754e0> async_client=<gen_ai_hub.proxy.native.openai.clients.AsyncEmbeddings object at 0x7f63577753c0> model='text-embedding-3-large' dimensions=None deployment='text-embedding-ada-002' openai_api_version=None openai_api_base=None openai_api_type=None openai_proxy=None embedding_ctx_length=8191 openai_api_key=SecretStr('**********') openai_organization=None allowed_special=None disallowed_special=None chunk_size=16 max_retries=2 request_timeout=None headers=None tiktoken_enabled=True tiktoken_model_name='text-embedding-ada-002' show_progress_bar=False model_kwargs={} skip_empty=False default_headers=None default_query=None retry_min_seconds=4 retry_max_seconds=20 http_client=None http_async_client=None check_embedding_ctx_length=True proxy_client=GenAIHubProxyClient(base_url='https://api.ai.prod-ap11.ap-southeast-1.aws.ml.hana.ondemand.com/v2', auth_url='https://core-foundational-12982zqn.authentication.ap11.hana.ondemand.com/oauth/token', client_id='sb-62c837c5-218b-4736-bc14-5852a02a313f!b5156|xsuaa_std!b15301', client_secret='03019e1c-4ec9-4c57-8968-4ce79a1f572e$KMcCBVldB7zuqgAFxdvCS3yfog9hhFwrjzQv8mLPTpE=', resource_group='default', ai_core_client=<ai_core_sdk.ai_core_v2_client.AICoreV2Client object at 0x7f636e8830a0>) deployment_id='d07481757a2f3028' config_name='text-embedding-3-large_autogenerated' config_id='c880f6a8-1d06-44f0-ad1f-e5450bae45b3' proxy_model_name='text-embedding-3-large'
+   2025-06-01T04:42:40.23+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:40 - earnings_analysis - INFO - pdf_processor.py:222 - Processing batch 1, size: 7, Sample: Top  5 Companies  by Earnings
+   2025-06-01T04:42:40.23+0000 [APP/PROC/WEB/0] ERR Rank CompanyQ4 2024
+   2025-06-01T04:42:40.23+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:40,232 - INFO - Processing batch 1, size: 7, Sample: Top  5 Companies  by Earnings
+   2025-06-01T04:42:40.23+0000 [APP/PROC/WEB/0] ERR Rank CompanyQ4 2024
+   2025-06-01T04:42:40.45+0000 [RTR/1] OUT earningsai-asst-srv6.cfapps.ap11.hana.ondemand.com - [2025-06-01T04:42:08.970045189Z] "POST /api/generate-embeddings HTTP/1.1" 502 0 67 "-" "PostmanRuntime/7.44.0" "10.0.72.1:53136" "10.0.73.9:61079" x_forwarded_for:"54.86.50.139, 10.0.72.1" x_forwarded_proto:"https" vcap_request_id:"d953d844-2fad-4f78-6b66-1fcc9181f8b4" response_time:31.481822 gorouter_time:0.000048 app_id:"cf3674e4-5310-4b27-b141-32d6ae3724ab" app_index:"0" instance_id:"0a2a7f9a-dd01-4640-43d5-f217" failed_attempts:1 failed_attempts_time:31.481657 dns_time:"-" dial_time:"-" tls_time:"-" backend_time:"-" local_address:"-" x_cf_routererror:"endpoint_failure (EOF)" x_correlationid:"-" tenantid:"-" sap_passport:"-" x_scp_request_id:"b29c1409-1960-4ea6-9a0b-7c2413b93e99-683BDA20-260FD4E" x_cf_app_instance:"-" x_forwarded_host:"-" x_custom_host:"-" x_ssl_client:"-" x_ssl_client_session_id:"-" x_ssl_client_verify:"-" x_ssl_client_subject_dn:"-" x_ssl_client_subject_cn:"-" x_ssl_client_issuer_dn:"-" x_ssl_client_notbefore:"-" x_ssl_client_notafter:"-" x_cf_forwarded_url:"-" traceparent:"-" true_client_ip:"-" x_cf_true_client_ip:"54.86.50.139" x_request_id:"-" x_b3_traceid:"d953d8442fad4f786b661fcc9181f8b4" x_b3_spanid:"6b661fcc9181f8b4" x_b3_parentspanid:"-" b3:"d953d8442fad4f786b661fcc9181f8b4-6b661fcc9181f8b4"
+   2025-06-01T04:42:40.45+0000 [APP/PROC/WEB/0] ERR [2025-06-01 04:42:40 +0000] [8] [ERROR] Worker (pid:321) was sent SIGKILL! Perhaps out of memory?
+   2025-06-01T04:42:40.45+0000 [APP/PROC/WEB/0] ERR [2025-06-01 04:42:40 +0000] [407] [INFO] Booting worker with pid: 407
+   2025-06-01T04:42:45.29+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:45 - earnings_analysis - INFO - db_connection.py:28 - ===>DB_Connections => GET HANA CREDENTIALS FROM DESTINATION SERVICES<===
+   2025-06-01T04:42:45.29+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:45 - earnings_analysis - INFO - db_connection.py:35 - Destination Service Credentials: {'dest_auth_url': 'https://core-foundational-12982zqn.authentication.ap11.hana.ondemand.com', 'clientid': 'sb-cloneea30c97ffdb44032a329d9eae5d0e762!b5156|destination-xsappname!b5', 'clientsecret': '7cb6f7f0-d291-43dc-801c-5a53d4f21a5e$9WE8YeyF17XdQo6JhhuCc807mMk45zwaF6Dcivh6RC8=', 'dest_base_url': 'https://destination-configuration.cfapps.ap11.hana.ondemand.com'}
+   2025-06-01T04:42:45.39+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:45 - earnings_analysis - INFO - db_connection.py:44 - OAuth token generated successfully for destination service.
+   2025-06-01T04:42:45.42+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:45 - earnings_analysis - INFO - db_connection.py:58 - HANA Destination Details: {'owner': {'SubaccountId': 'a4858a1d-5361-433e-953b-3b1af8d72b3c', 'InstanceId': None}, 'destinationConfiguration': {'schema': 'GenAI_Earnings_Call_1', 'Type': 'HTTP', 'Description': 'HANA Cloud connection', 'User': 'EARNINGS_AI', 'TrustAll': 'True', 'Authentication': 'BasicAuthentication', 'Port': '443', 'ProxyType': 'Internet', 'URL': 'https://3cb8ff87-b67f-4b68-8106-e297566641ef.hana.prod-ap11.hanacloud.ondemand.com', 'Name': 'EARNINGS_HDB', 'Password': 'YC2A_Ega6FTZQS912345678912'}, 'authTokens': [{'type': 'Basic', 'value': 'RUFSTklOR1NfQUk6WUMyQV9FZ2E2RlRaUVM5MTIzNDU2Nzg5MTI=', 'http_header': {'key': 'Authorization', 'value': 'Basic RUFSTklOR1NfQUk6WUMyQV9FZ2E2RlRaUVM5MTIzNDU2Nzg5MTI='}}]}
+   2025-06-01T04:42:45.42+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:45 - earnings_analysis - INFO - db_connection.py:62 - HANA_CREDENTIALS: {'address': '3cb8ff87-b67f-4b68-8106-e297566641ef.hana.prod-ap11.hanacloud.ondemand.com', 'user': 'EARNINGS_AI', 'password': 'YC2A_Ega6FTZQS912345678912', 'port': '443', 'schema': 'GenAI_Earnings_Call_1'}
+   2025-06-01T04:42:45.44+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:45 - earnings_analysis - INFO - llm_client.py:27 - ====> llm_client.py -> GET HANA AND AIC CREDENTIALS <====
+   2025-06-01T04:42:45.44+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:45 - earnings_analysis - INFO - llm_client.py:34 - Destination Service Credentials: {'dest_auth_url': 'https://core-foundational-12982zqn.authentication.ap11.hana.ondemand.com', 'clientid': 'sb-cloneea30c97ffdb44032a329d9eae5d0e762!b5156|destination-xsappname!b5', 'clientsecret': '7cb6f7f0-d291-43dc-801c-5a53d4f21a5e$9WE8YeyF17XdQo6JhhuCc807mMk45zwaF6Dcivh6RC8=', 'dest_base_url': 'https://destination-configuration.cfapps.ap11.hana.ondemand.com'}
+   2025-06-01T04:42:45.57+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:45 - earnings_analysis - INFO - llm_client.py:64 - AIC Destination Details fetched successfully
+   2025-06-01T04:42:45.57+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:45 - earnings_analysis - INFO - llm_client.py:69 - Orchestration URL : initialization
+   2025-06-01T04:42:45.57+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:45 - earnings_analysis - INFO - llm_client.py:79 -  AIC Credentials: {'aic_base_url': 'https://api.ai.prod-ap11.ap-southeast-1.aws.ml.hana.ondemand.com/v2', 'clientid': 'sb-62c837c5-218b-4736-bc14-5852a02a313f!b5156|xsuaa_std!b15301', 'clientsecret': '03019e1c-4ec9-4c57-8968-4ce79a1f572e$KMcCBVldB7zuqgAFxdvCS3yfog9hhFwrjzQv8mLPTpE=', 'aic_auth_url': 'https://core-foundational-12982zqn.authentication.ap11.hana.ondemand.com/oauth/token', 'resource_group': 'default', 'ORCHESTRATION_SERVICE_URL': 'https://api.ai.prod-ap11.ap-southeast-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d53b8af17648a85c'}
+   2025-06-01T04:42:45.64+0000 [APP/PROC/WEB/0] ERR /home/vcap/deps/0/python/lib/python3.10/site-packages/pypdf/_crypt_providers/_cryptography.py:32: CryptographyDeprecationWarning: ARC4 has been moved to cryptography.hazmat.decrepit.ciphers.algorithms.ARC4 and will be removed from cryptography.hazmat.primitives.ciphers.algorithms in 48.0.0.
+   2025-06-01T04:42:45.64+0000 [APP/PROC/WEB/0] ERR from cryptography.hazmat.primitives.ciphers.algorithms import AES, ARC4
+   2025-06-01T04:42:45.73+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:45 - earnings_analysis - INFO - pdf_processor.py:22 - ====> pdf_processor.py -> AIC CREDENTIALS <====
+   2025-06-01T04:42:45.73+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:45,731 - INFO - ====> pdf_processor.py -> AIC CREDENTIALS <====
+   2025-06-01T04:42:45.83+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:45,835 - INFO - OAuth token generated successfully.
+   2025-06-01T04:42:45.83+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:45,836 - INFO - Token: eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vY29yZS1mb3VuZGF0aW9uYWwtMTI5ODJ6cW4uYXV0aGVudGljYXRpb24uYXAxMS5oYW5hLm9uZGVtYW5kLmNvbS90b2tlbl9rZXlzIiwia2lkIjoiZGVmYXVsdC1qd3Qta2V5LS0xMTI1NDkwMzYwIiwidHlwIjoiSldUIiwiamlkIjogIk1lb1A2SVZaczVmN3RHdzlRdUxaQ3dkMC9PaXM0RG93bUdlSXpzZURWUGc9In0.eyJqdGkiOiJiMWM5ZjYwOWM4NzU0NDgxOWY5NmMxNDRlY2Q5NDcyMSIsImV4dF9hdHRyIjp7ImVuaGFuY2VyIjoiWFNVQUEiLCJzdWJhY2NvdW50aWQiOiJhNDg1OGExZC01MzYxLTQzM2UtOTUzYi0zYjFhZjhkNzJiM2MiLCJ6ZG4iOiJjb3JlLWZvdW5kYXRpb25hbC0xMjk4MnpxbiIsInNlcnZpY2VpbnN0YW5jZWlkIjoiZWEzMGM5N2YtZmRiNC00MDMyLWEzMjktZDllYWU1ZDBlNzYyIn0sInN1YiI6InNiLWNsb25lZWEzMGM5N2ZmZGI0NDAzMmEzMjlkOWVhZTVkMGU3NjIhYjUxNTZ8ZGVzdGluYXRpb24teHNhcHBuYW1lIWI1IiwiYXV0aG9yaXRpZXMiOlsidWFhLnJlc291cmNlIl0sInNjb3BlIjpbInVhYS5yZXNvdXJjZSJdLCJjbGllbnRfaWQiOiJzYi1jbG9uZWVhMzBjOTdmZmRiNDQwMzJhMzI5ZDllYWU1ZDBlNzYyIWI1MTU2fGRlc3RpbmF0aW9uLXhzYXBwbmFtZSFiNSIsImNpZCI6InNiLWNsb25lZWEzMGM5N2ZmZGI0NDAzMmEzMjlkOWVhZTVkMGU3NjIhYjUxNTZ8ZGVzdGluYXRpb24teHNhcHBuYW1lIWI1IiwiYXpwIjoic2ItY2xvbmVlYTMwYzk3ZmZkYjQ0MDMyYTMyOWQ5ZWFlNWQwZTc2MiFiNTE1NnxkZXN0aW5hdGlvbi14c2FwcG5hbWUhYjUiLCJncmFudF90eXBlIjoiY2xpZW50X2NyZWRlbnRpYWxzIiwicmV2X3NpZyI6IjgzZWVmZDI4IiwiaWF0IjoxNzQ4NzUyOTY1LCJleHAiOjE3NDg3OTYxNjUsImlzcyI6Imh0dHBzOi8vY29yZS1mb3VuZGF0aW9uYWwtMTI5ODJ6cW4uYXV0aGVudGljYXRpb24uYXAxMS5oYW5hLm9uZGVtYW5kLmNvbS9vYXV0aC90b2tlbiIsInppZCI6ImE0ODU4YTFkLTUzNjEtNDMzZS05NTNiLTNiMWFmOGQ3MmIzYyIsImF1ZCI6WyJ1YWEiLCJzYi1jbG9uZWVhMzBjOTdmZmRiNDQwMzJhMzI5ZDllYWU1ZDBlNzYyIWI1MTU2fGRlc3RpbmF0aW9uLXhzYXBwbmFtZSFiNSJdfQ.dZ0h9bwOrHmSsy03JG97wcIZj2glDsQRujcNlF5hYmbsWGuTHOm0fdF9vzY_rVvcRN80BchqxJ4JIqz1cLhie_lpDCWpPCSp_fiiMaDx7V_w_3fR2ygBZ6GVI1z8qH60foBOfZF9s9ZyxxbiqESfTmEG3TjnZ2cSrCZacTtS7T3xIAlhabkbqBESY05Sg6ZWcCVU9Ev_DHCE1udKtnMxzx7etj7OsgJvdhoiWu0ZhuqEiqfIyKX_H32ia5llBBTPGgxI0MJ5UKkehRXD8zD31PsAiRjXCWMu-yKs94Xwerx3FNHJyRD7OFwKmgETWnFBXUbrHB4q3AOihHnXRHEu0Q
+   2025-06-01T04:42:45.86+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:45 - earnings_analysis - INFO - pdf_processor.py:60 - pdf_processor -> AIC Credential
+   2025-06-01T04:42:45.86+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:45,865 - INFO - pdf_processor -> AIC Credential
+   2025-06-01T04:42:45.95+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:45 - earnings_analysis - INFO - embedding_storer.py:18 - ====> embeddings_storer.py -> AIC CREDENTIALS <====
+   2025-06-01T04:42:45.95+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:45,953 - INFO - ====> embeddings_storer.py -> AIC CREDENTIALS <====
+   2025-06-01T04:42:46.04+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:46,048 - INFO - OAuth token generated successfully.
+   2025-06-01T04:42:46.04+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:46,048 - INFO - Token: eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vY29yZS1mb3VuZGF0aW9uYWwtMTI5ODJ6cW4uYXV0aGVudGljYXRpb24uYXAxMS5oYW5hLm9uZGVtYW5kLmNvbS90b2tlbl9rZXlzIiwia2lkIjoiZGVmYXVsdC1qd3Qta2V5LS0xMTI1NDkwMzYwIiwidHlwIjoiSldUIiwiamlkIjogIjVWKzRES056R1RPcG56cmVDUnRxVXlIdm1IL1Y3bCtkL2RtazRxR0hCU2M9In0.eyJqdGkiOiJiYzhlNzRiNjcwYmU0ODlkYmQ0MDYzNDYzYjA5YzM4NyIsImV4dF9hdHRyIjp7ImVuaGFuY2VyIjoiWFNVQUEiLCJzdWJhY2NvdW50aWQiOiJhNDg1OGExZC01MzYxLTQzM2UtOTUzYi0zYjFhZjhkNzJiM2MiLCJ6ZG4iOiJjb3JlLWZvdW5kYXRpb25hbC0xMjk4MnpxbiIsInNlcnZpY2VpbnN0YW5jZWlkIjoiZWEzMGM5N2YtZmRiNC00MDMyLWEzMjktZDllYWU1ZDBlNzYyIn0sInN1YiI6InNiLWNsb25lZWEzMGM5N2ZmZGI0NDAzMmEzMjlkOWVhZTVkMGU3NjIhYjUxNTZ8ZGVzdGluYXRpb24teHNhcHBuYW1lIWI1IiwiYXV0aG9yaXRpZXMiOlsidWFhLnJlc291cmNlIl0sInNjb3BlIjpbInVhYS5yZXNvdXJjZSJdLCJjbGllbnRfaWQiOiJzYi1jbG9uZWVhMzBjOTdmZmRiNDQwMzJhMzI5ZDllYWU1ZDBlNzYyIWI1MTU2fGRlc3RpbmF0aW9uLXhzYXBwbmFtZSFiNSIsImNpZCI6InNiLWNsb25lZWEzMGM5N2ZmZGI0NDAzMmEzMjlkOWVhZTVkMGU3NjIhYjUxNTZ8ZGVzdGluYXRpb24teHNhcHBuYW1lIWI1IiwiYXpwIjoic2ItY2xvbmVlYTMwYzk3ZmZkYjQ0MDMyYTMyOWQ5ZWFlNWQwZTc2MiFiNTE1NnxkZXN0aW5hdGlvbi14c2FwcG5hbWUhYjUiLCJncmFudF90eXBlIjoiY2xpZW50X2NyZWRlbnRpYWxzIiwicmV2X3NpZyI6IjgzZWVmZDI4IiwiaWF0IjoxNzQ4NzUyOTY2LCJleHAiOjE3NDg3OTYxNjYsImlzcyI6Imh0dHBzOi8vY29yZS1mb3VuZGF0aW9uYWwtMTI5ODJ6cW4uYXV0aGVudGljYXRpb24uYXAxMS5oYW5hLm9uZGVtYW5kLmNvbS9vYXV0aC90b2tlbiIsInppZCI6ImE0ODU4YTFkLTUzNjEtNDMzZS05NTNiLTNiMWFmOGQ3MmIzYyIsImF1ZCI6WyJ1YWEiLCJzYi1jbG9uZWVhMzBjOTdmZmRiNDQwMzJhMzI5ZDllYWU1ZDBlNzYyIWI1MTU2fGRlc3RpbmF0aW9uLXhzYXBwbmFtZSFiNSJdfQ.SW59GJta-dS-is6Gl1JaIGgcjnpd91Y0MK9bFqDNq6514aLxJmVqQ7g8siixF3IdfpOLcsVjLT_1SEH-t-fW_4IXv7mUwxG85YzqZU-Xd1uioUtMqokMyZYcmTrulzcTKVuN9I6jSamygY8r4v_FH6Z4NEJxOREC_7AwmBx88ce2dcE04zm9BQrE9GbxAPMM5CWBpPkTQ5adesaAUz7OxTJ_QBetM0V_2apmPEUawu8bLGdalaCB6GQb7eFrnVBn6zMYTR46-kc8GtaTqp2PprlZttjks4Pt9fKepVrQW1Y6Og42Bml_lxRgIkU9xSYHpR9uMRpuD7IACjwxq3frgQ
+   2025-06-01T04:42:46.07+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:46 - earnings_analysis - INFO - embedding_storer.py:43 - AIC Credential
+   2025-06-01T04:42:46.07+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:46,076 - INFO - AIC Credential
+   2025-06-01T04:42:46.07+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:46,077 - INFO - Destination Service Credentials: {'dest_auth_url': 'https://core-foundational-12982zqn.authentication.ap11.hana.ondemand.com', 'clientid': 'sb-cloneea30c97ffdb44032a329d9eae5d0e762!b5156|destination-xsappname!b5', 'clientsecret': '7cb6f7f0-d291-43dc-801c-5a53d4f21a5e$9WE8YeyF17XdQo6JhhuCc807mMk45zwaF6Dcivh6RC8=', 'dest_base_url': 'https://destination-configuration.cfapps.ap11.hana.ondemand.com'}
+   2025-06-01T04:42:46.10+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:46,105 - INFO - OAuth token generated successfully.
+   2025-06-01T04:42:46.10+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:46,105 - INFO - Token: eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vY29yZS1mb3VuZGF0aW9uYWwtMTI5ODJ6cW4uYXV0aGVudGljYXRpb24uYXAxMS5oYW5hLm9uZGVtYW5kLmNvbS90b2tlbl9rZXlzIiwia2lkIjoiZGVmYXVsdC1qd3Qta2V5LS0xMTI1NDkwMzYwIiwidHlwIjoiSldUIiwiamlkIjogInJNSnFXZC9lRVZ3VUEwWENGV3NyclNMZ1pLa3NiSkdTR3lkaGpwTU1lbUU9In0.eyJqdGkiOiIwN2YxM2YwNTdkZTM0NGQ5YmMzZWEyNGFjOGJlZTVkOCIsImV4dF9hdHRyIjp7ImVuaGFuY2VyIjoiWFNVQUEiLCJzdWJhY2NvdW50aWQiOiJhNDg1OGExZC01MzYxLTQzM2UtOTUzYi0zYjFhZjhkNzJiM2MiLCJ6ZG4iOiJjb3JlLWZvdW5kYXRpb25hbC0xMjk4MnpxbiIsInNlcnZpY2VpbnN0YW5jZWlkIjoiZWEzMGM5N2YtZmRiNC00MDMyLWEzMjktZDllYWU1ZDBlNzYyIn0sInN1YiI6InNiLWNsb25lZWEzMGM5N2ZmZGI0NDAzMmEzMjlkOWVhZTVkMGU3NjIhYjUxNTZ8ZGVzdGluYXRpb24teHNhcHBuYW1lIWI1IiwiYXV0aG9yaXRpZXMiOlsidWFhLnJlc291cmNlIl0sInNjb3BlIjpbInVhYS5yZXNvdXJjZSJdLCJjbGllbnRfaWQiOiJzYi1jbG9uZWVhMzBjOTdmZmRiNDQwMzJhMzI5ZDllYWU1ZDBlNzYyIWI1MTU2fGRlc3RpbmF0aW9uLXhzYXBwbmFtZSFiNSIsImNpZCI6InNiLWNsb25lZWEzMGM5N2ZmZGI0NDAzMmEzMjlkOWVhZTVkMGU3NjIhYjUxNTZ8ZGVzdGluYXRpb24teHNhcHBuYW1lIWI1IiwiYXpwIjoic2ItY2xvbmVlYTMwYzk3ZmZkYjQ0MDMyYTMyOWQ5ZWFlNWQwZTc2MiFiNTE1NnxkZXN0aW5hdGlvbi14c2FwcG5hbWUhYjUiLCJncmFudF90eXBlIjoiY2xpZW50X2NyZWRlbnRpYWxzIiwicmV2X3NpZyI6IjgzZWVmZDI4IiwiaWF0IjoxNzQ4NzUyOTY2LCJleHAiOjE3NDg3OTYxNjYsImlzcyI6Imh0dHBzOi8vY29yZS1mb3VuZGF0aW9uYWwtMTI5ODJ6cW4uYXV0aGVudGljYXRpb24uYXAxMS5oYW5hLm9uZGVtYW5kLmNvbS9vYXV0aC90b2tlbiIsInppZCI6ImE0ODU4YTFkLTUzNjEtNDMzZS05NTNiLTNiMWFmOGQ3MmIzYyIsImF1ZCI6WyJ1YWEiLCJzYi1jbG9uZWVhMzBjOTdmZmRiNDQwMzJhMzI5ZDllYWU1ZDBlNzYyIWI1MTU2fGRlc3RpbmF0aW9uLXhzYXBwbmFtZSFiNSJdfQ.FQtMbEqZLNnTsISU-A2BP2VUOHqMl7xpWdd-ddlxVrzEZEpcJuOoMX3gKaZvVK6O07N6sPzS11ttRL-1IzTVPGO-458nAcqCS9mJrG00pajeftuuRhBkFvh8IE0iOBr2OocSkhXXMA0sWfSZW8CTpHc81EB0wvkG_ZLbtnlIcSugWsI5j1xdyj9EMTHxP-kWpHwzCBaY5vhCduWcJ0GbRcHiVcV2Q0wjwrsc23LVIfqJBZ5SjnRmWyKEQUfgDWIzN4hs_o75hULVQ40auwmAasPPeIOPWtSAWGVyRHEGjQi9x5bo4k8uskRSjZ3QwsrJ3-TQyOFwrQvPFWOkjfGU6g
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:46,133 - INFO - CAP Destination Details fetched successfully
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:46,134 - INFO - CAP Credentials: {'cap_base_url': 'https://standard-chartered-bank-core-foundational-12982zqn-gena4b53cb41.cfapps.ap11.hana.ondemand.com', 'cap_clientid': 'sb-earning-upload!t5156', 'cap_clientsecret': '2db20f6f-b4cd-4f9a-b27f-a8f6e15a3c23$CLy31CAgGjo9EpJOQB-HOegl8fxEypDWetJDHPB0Bac=', 'cap_auth_url': 'https://core-foundational-12982zqn.authentication.ap11.hana.ondemand.com/oauth/token', 'resource_group': None}
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR --- Logging error ---
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR Traceback (most recent call last):
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/logging/__init__.py", line 1100, in emit
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR msg = self.format(record)
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/logging/__init__.py", line 943, in format
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR return fmt.format(record)
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/logging/__init__.py", line 678, in format
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR record.message = record.getMessage()
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/logging/__init__.py", line 368, in getMessage
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR msg = msg % self.args
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR TypeError: not all arguments converted during string formatting
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR Call stack:
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/bin/gunicorn", line 8, in <module>
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR sys.exit(run())
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 66, in run
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]", prog=prog).run()
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/base.py", line 235, in run
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR super().run()
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/base.py", line 71, in run
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR Arbiter(self).run()
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/arbiter.py", line 210, in run
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR self.manage_workers()
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/arbiter.py", line 570, in manage_workers
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR self.spawn_workers()
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/arbiter.py", line 641, in spawn_workers
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR self.spawn_worker()
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR worker.init_process()
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/workers/base.py", line 135, in init_process
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR self.load_wsgi()
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR self.wsgi = self.app.wsgi()
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/base.py", line 66, in wsgi
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR self.callable = self.load()
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR return self.load_wsgiapp()
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR return util.import_app(self.app_uri)
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/util.py", line 370, in import_app
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR mod = importlib.import_module(module)
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR return _bootstrap._gcd_import(name[level:], package, level)
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/app/server.py", line 15, in <module>
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR from api_client import download_embedding_files, update_completed_files
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/app/api_client.py", line 54, in <module>
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR logger.info("CLIENT_ID", CLIENT_ID);
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR Message: 'CLIENT_ID'
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR Arguments: ('sb-earning-upload!t5156',)
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR --- Logging error ---
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR Traceback (most recent call last):
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/logging/__init__.py", line 1100, in emit
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR msg = self.format(record)
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/logging/__init__.py", line 943, in format
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR return fmt.format(record)
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/logging/__init__.py", line 678, in format
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR record.message = record.getMessage()
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/logging/__init__.py", line 368, in getMessage
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR msg = msg % self.args
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR TypeError: not all arguments converted during string formatting
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR Call stack:
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/bin/gunicorn", line 8, in <module>
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR sys.exit(run())
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 66, in run
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]", prog=prog).run()
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/base.py", line 235, in run
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR super().run()
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/base.py", line 71, in run
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR Arbiter(self).run()
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/arbiter.py", line 210, in run
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR self.manage_workers()
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/arbiter.py", line 570, in manage_workers
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR self.spawn_workers()
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/arbiter.py", line 641, in spawn_workers
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR self.spawn_worker()
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR worker.init_process()
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/workers/base.py", line 135, in init_process
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR self.load_wsgi()
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR self.wsgi = self.app.wsgi()
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/base.py", line 66, in wsgi
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR self.callable = self.load()
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR return self.load_wsgiapp()
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR return util.import_app(self.app_uri)
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/util.py", line 370, in import_app
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR mod = importlib.import_module(module)
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR return _bootstrap._gcd_import(name[level:], package, level)
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/app/server.py", line 15, in <module>
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR from api_client import download_embedding_files, update_completed_files
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/app/api_client.py", line 55, in <module>
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR logger.info("AUTH_URL", AUTH_URL);
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR Message: 'AUTH_URL'
+   2025-06-01T04:42:46.13+0000 [APP/PROC/WEB/0] ERR Arguments: ('https://core-foundational-12982zqn.authentication.ap11.hana.ondemand.com/oauth/token',)
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR --- Logging error ---
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR Traceback (most recent call last):
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/logging/__init__.py", line 1100, in emit
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR msg = self.format(record)
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/logging/__init__.py", line 943, in format
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR return fmt.format(record)
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/logging/__init__.py", line 678, in format
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR record.message = record.getMessage()
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/logging/__init__.py", line 368, in getMessage
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR msg = msg % self.args
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR TypeError: not all arguments converted during string formatting
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR Call stack:
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/bin/gunicorn", line 8, in <module>
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR sys.exit(run())
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 66, in run
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]", prog=prog).run()
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/base.py", line 235, in run
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR super().run()
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/base.py", line 71, in run
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR Arbiter(self).run()
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/arbiter.py", line 210, in run
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR self.manage_workers()
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/arbiter.py", line 570, in manage_workers
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR self.spawn_workers()
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/arbiter.py", line 641, in spawn_workers
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR self.spawn_worker()
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR worker.init_process()
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/workers/base.py", line 135, in init_process
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR self.load_wsgi()
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR self.wsgi = self.app.wsgi()
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/base.py", line 66, in wsgi
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR self.callable = self.load()
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR return self.load_wsgiapp()
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR return util.import_app(self.app_uri)
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/util.py", line 370, in import_app
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR mod = importlib.import_module(module)
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR return _bootstrap._gcd_import(name[level:], package, level)
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/app/server.py", line 34, in <module>
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR logger.info("Document Directory", documents_dir)
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR Message: 'Document Directory'
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR Arguments: ('/home/vcap/app/Documents',)
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR --- Logging error ---
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR Traceback (most recent call last):
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/logging/__init__.py", line 1100, in emit
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR msg = self.format(record)
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/logging/__init__.py", line 943, in format
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR return fmt.format(record)
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/logging/__init__.py", line 678, in format
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR record.message = record.getMessage()
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/logging/__init__.py", line 368, in getMessage
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR msg = msg % self.args
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR TypeError: not all arguments converted during string formatting
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR Call stack:
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/bin/gunicorn", line 8, in <module>
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR sys.exit(run())
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 66, in run
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]", prog=prog).run()
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/base.py", line 235, in run
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR super().run()
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/base.py", line 71, in run
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR Arbiter(self).run()
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/arbiter.py", line 210, in run
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR self.manage_workers()
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/arbiter.py", line 570, in manage_workers
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR self.spawn_workers()
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/arbiter.py", line 641, in spawn_workers
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR self.spawn_worker()
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR worker.init_process()
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/workers/base.py", line 135, in init_process
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR self.load_wsgi()
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR self.wsgi = self.app.wsgi()
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/base.py", line 66, in wsgi
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR self.callable = self.load()
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR return self.load_wsgiapp()
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR return util.import_app(self.app_uri)
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/util.py", line 370, in import_app
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR mod = importlib.import_module(module)
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR return _bootstrap._gcd_import(name[level:], package, level)
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/app/server.py", line 36, in <module>
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR logger.info("Image Library",images_dir)
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR Message: 'Image Library'
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR Arguments: ('/home/vcap/app/Images',)
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR --- Logging error ---
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR Traceback (most recent call last):
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/logging/__init__.py", line 1100, in emit
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR msg = self.format(record)
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/logging/__init__.py", line 943, in format
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR return fmt.format(record)
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/logging/__init__.py", line 678, in format
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR record.message = record.getMessage()
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/logging/__init__.py", line 368, in getMessage
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR msg = msg % self.args
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR TypeError: not all arguments converted during string formatting
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR Call stack:
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/bin/gunicorn", line 8, in <module>
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR sys.exit(run())
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 66, in run
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]", prog=prog).run()
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/base.py", line 235, in run
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR super().run()
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/base.py", line 71, in run
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR Arbiter(self).run()
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/arbiter.py", line 210, in run
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR self.manage_workers()
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/arbiter.py", line 570, in manage_workers
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR self.spawn_workers()
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/arbiter.py", line 641, in spawn_workers
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR self.spawn_worker()
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR worker.init_process()
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/workers/base.py", line 135, in init_process
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR self.load_wsgi()
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR self.wsgi = self.app.wsgi()
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/base.py", line 66, in wsgi
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR self.callable = self.load()
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR return self.load_wsgiapp()
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR return util.import_app(self.app_uri)
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/util.py", line 370, in import_app
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR mod = importlib.import_module(module)
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR return _bootstrap._gcd_import(name[level:], package, level)
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/app/server.py", line 38, in <module>
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR logger.info("Log Directory", logs_dir)
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR Message: 'Log Directory'
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR Arguments: ('/home/vcap/app/logs',)
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] OUT VCAP_SERVICES: {"xsuaa":[{"label":"xsuaa","provider":null,"plan":"application","name":"xsuaa_earningsai","tags":["xsuaa"],"instance_guid":"2f5c8edd-2a5a-4faf-b4f0-637445e79fdb","instance_name":"xsuaa_earningsai","binding_guid":"3805b787-8d37-474e-89c1-15f87476edca","binding_name":null,"credentials":{"tenantmode":"dedicated","sburl":"https://internal-xsuaa.authentication.ap11.hana.ondemand.com","subaccountid":"a4858a1d-5361-433e-953b-3b1af8d72b3c","credential-type":"instance-secret","clientid":"sb-earningsai-asst-srv!t5156","xsappname":"earningsai-asst-srv!t5156","clientsecret":"MTfj/vfkbSeQoRt0FjYVWHJf8sg=","serviceInstanceId":"2f5c8edd-2a5a-4faf-b4f0-637445e79fdb","url":"https://core-foundational-12982zqn.authentication.ap11.hana.ondemand.com","uaadomain":"authentication.ap11.hana.ondemand.com","verificationkey":"-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsAk3ulGEWVTRpSNNhvsX\nysPE82Xn7ZQIyWE0NX8+QHPD4jlLRXIRcgvsEN2jtZJk0v10iFvw3ul+slK9lKkG\ni8t1BZvXgrbeeY3mjRmc7R0GQk/7EV2Kw2ydAKlCgBNMQFGL1lOy1jOaynpihMI9\nftL3vSBekWXFYXuqnIw9xlevKREgvw2iAqyWjDe33jxidsrjNP7ywxnMBa9YcoDf\n0vdkEJD3qEkyAB9gbpDQvLu+Wuq7Sn669ByjTFaKblBx0qfgN3e+dZ8tOvgcPJqO\nUXye/cj6CX4QXiOwusAcDNUXFhM+T8qghf6yHknGc6xX3kW1nQ2VK/HK73aS6JPf\nXwIDAQAB\n-----END PUBLIC KEY-----","apiurl":"https://api.authentication.ap11.hana.ondemand.com","identityzone":"core-foundational-12982zqn","identityzoneid":"a4858a1d-5361-433e-953b-3b1af8d72b3c","tenantid":"a4858a1d-5361-433e-953b-3b1af8d72b3c","zoneid":"a4858a1d-5361-433e-953b-3b1af8d72b3c"},"syslog_drain_url":null,"volume_mounts":[]}],"destination":[{"label":"destination","provider":null,"plan":"lite","name":"dest_earningsai","tags":["destination","conn","connsvc"],"instance_guid":"ea30c97f-fdb4-4032-a329-d9eae5d0e762","instance_name":"dest_earningsai","binding_guid":"7cb6f7f0-d291-43dc-801c-5a53d4f21a5e","binding_name":null,"credentials":{"tenantmode":"dedicated","token-type":["xsuaa"],"clientid":"sb-cloneea30c97ffdb44032a329d9eae5d0e762!b5156|destination-xsappname!b5","credential-type":"binding-secret","xsappname":"cloneea30c97ffdb44032a329d9eae5d0e762!b5156|destination-xsappname!b5","clientsecret":"7cb6f7f0-d291-43dc-801c-5a53d4f21a5e$9WE8YeyF17XdQo6JhhuCc807mMk45zwaF6Dcivh6RC8=","uri":"https://destination-configuration.cfapps.ap11.hana.ondemand.com","url":"https://core-foundational-12982zqn.authentication.ap11.hana.ondemand.com","uaadomain":"authentication.ap11.hana.ondemand.com","instanceid":"ea30c97f-fdb4-4032-a329-d9eae5d0e762","verificationkey":"-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsAk3ulGEWVTRpSNNhvsX\nysPE82Xn7ZQIyWE0NX8+QHPD4jlLRXIRcgvsEN2jtZJk0v10iFvw3ul+slK9lKkG\ni8t1BZvXgrbeeY3mjRmc7R0GQk/7EV2Kw2ydAKlCgBNMQFGL1lOy1jOaynpihMI9\nftL3vSBekWXFYXuqnIw9xlevKREgvw2iAqyWjDe33jxidsrjNP7ywxnMBa9YcoDf\n0vdkEJD3qEkyAB9gbpDQvLu+Wuq7Sn669ByjTFaKblBx0qfgN3e+dZ8tOvgcPJqO\nUXye/cj6CX4QXiOwusAcDNUXFhM+T8qghf6yHknGc6xX3kW1nQ2VK/HK73aS6JPf\nXwIDAQAB\n-----END PUBLIC KEY-----","identityzone":"core-foundational-12982zqn","tenantid":"a4858a1d-5361-433e-953b-3b1af8d72b3c"},"syslog_drain_url":null,"volume_mounts":[]}]}
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:46,472 - INFO - XSUAA credentials successfully retrieved from VCAP_SERVICES.
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:46,472 - INFO - XSUAA Credentials: {'clientid': 'sb-earningsai-asst-srv!t5156', 'clientsecret': 'MTfj/vfkbSeQoRt0FjYVWHJf8sg=', 'url': 'https://core-foundational-12982zqn.authentication.ap11.hana.ondemand.com', 'xsappname': 'earningsai-asst-srv!t5156'}
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:46,472 - INFO - ***server.py -> GET HANA AND AIC CREDENTIALS FROM DESTINATION SERVICES***
+   2025-06-01T04:42:46.47+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:46,472 - INFO - Destination Service Credentials: {'dest_auth_url': 'https://core-foundational-12982zqn.authentication.ap11.hana.ondemand.com', 'clientid': 'sb-cloneea30c97ffdb44032a329d9eae5d0e762!b5156|destination-xsappname!b5', 'clientsecret': '7cb6f7f0-d291-43dc-801c-5a53d4f21a5e$9WE8YeyF17XdQo6JhhuCc807mMk45zwaF6Dcivh6RC8=', 'dest_base_url': 'https://destination-configuration.cfapps.ap11.hana.ondemand.com'}
+   2025-06-01T04:42:46.50+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:46,499 - INFO - OAuth token generated successfully.
+   2025-06-01T04:42:46.50+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:46,500 - INFO - Token: eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vY29yZS1mb3VuZGF0aW9uYWwtMTI5ODJ6cW4uYXV0aGVudGljYXRpb24uYXAxMS5oYW5hLm9uZGVtYW5kLmNvbS90b2tlbl9rZXlzIiwia2lkIjoiZGVmYXVsdC1qd3Qta2V5LS0xMTI1NDkwMzYwIiwidHlwIjoiSldUIiwiamlkIjogIk92ZythOXp3dkg4UnpLbEttSjF1eGF4T2pRSE9GQm5aYVJnRGtoSVRFN1E9In0.eyJqdGkiOiI0ZWQ3M2I5YzFiNzA0NDhjYjVjZjJiZjdlNDNmNDYwOSIsImV4dF9hdHRyIjp7ImVuaGFuY2VyIjoiWFNVQUEiLCJzdWJhY2NvdW50aWQiOiJhNDg1OGExZC01MzYxLTQzM2UtOTUzYi0zYjFhZjhkNzJiM2MiLCJ6ZG4iOiJjb3JlLWZvdW5kYXRpb25hbC0xMjk4MnpxbiIsInNlcnZpY2VpbnN0YW5jZWlkIjoiZWEzMGM5N2YtZmRiNC00MDMyLWEzMjktZDllYWU1ZDBlNzYyIn0sInN1YiI6InNiLWNsb25lZWEzMGM5N2ZmZGI0NDAzMmEzMjlkOWVhZTVkMGU3NjIhYjUxNTZ8ZGVzdGluYXRpb24teHNhcHBuYW1lIWI1IiwiYXV0aG9yaXRpZXMiOlsidWFhLnJlc291cmNlIl0sInNjb3BlIjpbInVhYS5yZXNvdXJjZSJdLCJjbGllbnRfaWQiOiJzYi1jbG9uZWVhMzBjOTdmZmRiNDQwMzJhMzI5ZDllYWU1ZDBlNzYyIWI1MTU2fGRlc3RpbmF0aW9uLXhzYXBwbmFtZSFiNSIsImNpZCI6InNiLWNsb25lZWEzMGM5N2ZmZGI0NDAzMmEzMjlkOWVhZTVkMGU3NjIhYjUxNTZ8ZGVzdGluYXRpb24teHNhcHBuYW1lIWI1IiwiYXpwIjoic2ItY2xvbmVlYTMwYzk3ZmZkYjQ0MDMyYTMyOWQ5ZWFlNWQwZTc2MiFiNTE1NnxkZXN0aW5hdGlvbi14c2FwcG5hbWUhYjUiLCJncmFudF90eXBlIjoiY2xpZW50X2NyZWRlbnRpYWxzIiwicmV2X3NpZyI6IjgzZWVmZDI4IiwiaWF0IjoxNzQ4NzUyOTY2LCJleHAiOjE3NDg3OTYxNjYsImlzcyI6Imh0dHBzOi8vY29yZS1mb3VuZGF0aW9uYWwtMTI5ODJ6cW4uYXV0aGVudGljYXRpb24uYXAxMS5oYW5hLm9uZGVtYW5kLmNvbS9vYXV0aC90b2tlbiIsInppZCI6ImE0ODU4YTFkLTUzNjEtNDMzZS05NTNiLTNiMWFmOGQ3MmIzYyIsImF1ZCI6WyJ1YWEiLCJzYi1jbG9uZWVhMzBjOTdmZmRiNDQwMzJhMzI5ZDllYWU1ZDBlNzYyIWI1MTU2fGRlc3RpbmF0aW9uLXhzYXBwbmFtZSFiNSJdfQ.pCkTjl6Shft8JiKgwkhhPnacytDXwvGacOeeikO9Qc9EK0yq3A8EwyHZhzi3VGtruxpiXASvISZ28wDTKr8biAglvozKflvckhafKLE0ya1fTz91l56pymAyGbWTkf3O4Fn9QTjKFeTV4eLS535Rcer0rmrvfk-VdExluhvuYXavN0hvWDaCzk_d8lpTbXJRQreQo88vBZhftN5mbg24G6oY4uuh-W5jcMLjVg9gUm04OrbyTeYM3N4PPagLunI-Y0iJF57DbznLl04FiuAthCHnD0wBQCz0KCHKcS2lIREqVGuPnf0g3dZ1f1czQKMWvkRy7fsbkbkAPIhRNB3I2Q
+   2025-06-01T04:42:46.52+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:46,525 - INFO - HANA Destination Details: {'owner': {'SubaccountId': 'a4858a1d-5361-433e-953b-3b1af8d72b3c', 'InstanceId': None}, 'destinationConfiguration': {'schema': 'GenAI_Earnings_Call_1', 'Type': 'HTTP', 'Description': 'HANA Cloud connection', 'User': 'EARNINGS_AI', 'TrustAll': 'True', 'Authentication': 'BasicAuthentication', 'Port': '443', 'ProxyType': 'Internet', 'URL': 'https://3cb8ff87-b67f-4b68-8106-e297566641ef.hana.prod-ap11.hanacloud.ondemand.com', 'Name': 'EARNINGS_HDB', 'Password': 'YC2A_Ega6FTZQS912345678912'}, 'authTokens': [{'type': 'Basic', 'value': 'RUFSTklOR1NfQUk6WUMyQV9FZ2E2RlRaUVM5MTIzNDU2Nzg5MTI=', 'http_header': {'key': 'Authorization', 'value': 'Basic RUFSTklOR1NfQUk6WUMyQV9FZ2E2RlRaUVM5MTIzNDU2Nzg5MTI='}}]}
+   2025-06-01T04:42:46.52+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:46,525 - INFO -  HANA Credentials: {'address': '3cb8ff87-b67f-4b68-8106-e297566641ef.hana.prod-ap11.hanacloud.ondemand.com', 'user': 'EARNINGS_AI', 'password': 'YC2A_Ega6FTZQS912345678912', 'port': '443', 'schema': 'GenAI_Earnings_Call_1'}
+   2025-06-01T04:42:46.71+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:46,713 - INFO - Successfully connected to HANA database
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:46,744 - INFO - AIC Destination Details fetched successfully
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:46,744 - INFO - Global AIC Credentials: {'aic_base_url': 'https://api.ai.prod-ap11.ap-southeast-1.aws.ml.hana.ondemand.com/v2', 'clientid': 'sb-62c837c5-218b-4736-bc14-5852a02a313f!b5156|xsuaa_std!b15301', 'clientsecret': '03019e1c-4ec9-4c57-8968-4ce79a1f572e$KMcCBVldB7zuqgAFxdvCS3yfog9hhFwrjzQv8mLPTpE=', 'aic_auth_url': 'https://core-foundational-12982zqn.authentication.ap11.hana.ondemand.com/oauth/token', 'resource_group': 'default', 'ORCHESTRATION_SERVICE_URL': 'https://api.ai.prod-ap11.ap-southeast-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d53b8af17648a85c'}
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:46,744 - INFO - Loading vector stores
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:46 - earnings_analysis - INFO - db_connection.py:153 - Loading vector stores with bank_name filter: None
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:46,744 - INFO - Loading vector stores with bank_name filter: None
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR --- Logging error ---
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR Traceback (most recent call last):
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/logging/handlers.py", line 73, in emit
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR if self.shouldRollover(record):
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/logging/handlers.py", line 196, in shouldRollover
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR msg = "%s\n" % self.format(record)
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/logging/__init__.py", line 943, in format
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR return fmt.format(record)
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/logging/__init__.py", line 678, in format
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR record.message = record.getMessage()
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/logging/__init__.py", line 368, in getMessage
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR msg = msg % self.args
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR TypeError: not all arguments converted during string formatting
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR Call stack:
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/bin/gunicorn", line 8, in <module>
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR sys.exit(run())
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 66, in run
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]", prog=prog).run()
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/base.py", line 235, in run
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR super().run()
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/base.py", line 71, in run
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR Arbiter(self).run()
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/arbiter.py", line 210, in run
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR self.manage_workers()
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/arbiter.py", line 570, in manage_workers
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR self.spawn_workers()
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/arbiter.py", line 641, in spawn_workers
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR self.spawn_worker()
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR worker.init_process()
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/workers/base.py", line 135, in init_process
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR self.load_wsgi()
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR self.wsgi = self.app.wsgi()
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/base.py", line 66, in wsgi
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR self.callable = self.load()
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR return self.load_wsgiapp()
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR return util.import_app(self.app_uri)
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/util.py", line 370, in import_app
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR mod = importlib.import_module(module)
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR return _bootstrap._gcd_import(name[level:], package, level)
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/app/server.py", line 189, in <module>
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR transcript_store, non_transcript_store, excel_non_transcript_store = load_vector_stores(AIC_CREDENTIALS=GV_AIC_CREDENTIALS)
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/app/db_connection.py", line 159, in load_vector_stores
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR logger.info('Embedding Model', EMBEDDING_MODEL)
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR Message: 'Embedding Model'
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR Arguments: ('text-embedding-3-large',)
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR --- Logging error ---
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR Traceback (most recent call last):
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/logging/__init__.py", line 1100, in emit
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR msg = self.format(record)
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/logging/__init__.py", line 943, in format
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR return fmt.format(record)
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/logging/__init__.py", line 678, in format
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR record.message = record.getMessage()
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/logging/__init__.py", line 368, in getMessage
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR msg = msg % self.args
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR TypeError: not all arguments converted during string formatting
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR Call stack:
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/bin/gunicorn", line 8, in <module>
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR sys.exit(run())
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 66, in run
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]", prog=prog).run()
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/base.py", line 235, in run
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR super().run()
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/base.py", line 71, in run
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR Arbiter(self).run()
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/arbiter.py", line 210, in run
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR self.manage_workers()
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/arbiter.py", line 570, in manage_workers
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR self.spawn_workers()
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/arbiter.py", line 641, in spawn_workers
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR self.spawn_worker()
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR worker.init_process()
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/workers/base.py", line 135, in init_process
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR self.load_wsgi()
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR self.wsgi = self.app.wsgi()
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/base.py", line 66, in wsgi
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR self.callable = self.load()
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR return self.load_wsgiapp()
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR return util.import_app(self.app_uri)
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/util.py", line 370, in import_app
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR mod = importlib.import_module(module)
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR return _bootstrap._gcd_import(name[level:], package, level)
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/app/server.py", line 189, in <module>
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR transcript_store, non_transcript_store, excel_non_transcript_store = load_vector_stores(AIC_CREDENTIALS=GV_AIC_CREDENTIALS)
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/app/db_connection.py", line 159, in load_vector_stores
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR logger.info('Embedding Model', EMBEDDING_MODEL)
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR Message: 'Embedding Model'
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR Arguments: ('text-embedding-3-large',)
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR --- Logging error ---
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR Traceback (most recent call last):
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/logging/__init__.py", line 1100, in emit
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR msg = self.format(record)
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/logging/__init__.py", line 943, in format
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR return fmt.format(record)
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/logging/__init__.py", line 678, in format
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR record.message = record.getMessage()
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/logging/__init__.py", line 368, in getMessage
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR msg = msg % self.args
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR TypeError: not all arguments converted during string formatting
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR Call stack:
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/bin/gunicorn", line 8, in <module>
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR sys.exit(run())
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 66, in run
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]", prog=prog).run()
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/base.py", line 235, in run
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR super().run()
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/base.py", line 71, in run
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR Arbiter(self).run()
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/arbiter.py", line 210, in run
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR self.manage_workers()
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/arbiter.py", line 570, in manage_workers
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR self.spawn_workers()
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/arbiter.py", line 641, in spawn_workers
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR self.spawn_worker()
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR worker.init_process()
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/workers/base.py", line 135, in init_process
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR self.load_wsgi()
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR self.wsgi = self.app.wsgi()
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/base.py", line 66, in wsgi
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR self.callable = self.load()
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR return self.load_wsgiapp()
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR return util.import_app(self.app_uri)
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/site-packages/gunicorn/util.py", line 370, in import_app
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR mod = importlib.import_module(module)
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/deps/0/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR return _bootstrap._gcd_import(name[level:], package, level)
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/app/server.py", line 189, in <module>
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR transcript_store, non_transcript_store, excel_non_transcript_store = load_vector_stores(AIC_CREDENTIALS=GV_AIC_CREDENTIALS)
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR File "/home/vcap/app/db_connection.py", line 159, in load_vector_stores
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR logger.info('Embedding Model', EMBEDDING_MODEL)
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR Message: 'Embedding Model'
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR Arguments: ('text-embedding-3-large',)
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:46 - earnings_analysis - INFO - db_connection.py:160 - AIC Credentials
+   2025-06-01T04:42:46.74+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:46,746 - INFO - AIC Credentials
+   2025-06-01T04:42:47.03+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:47 - earnings_analysis - INFO - db_connection.py:173 - [Deployment(url='https://api.ai.prod-ap11.ap-southeast-1.aws.ml.hana.ondemand.com/v2/inference/deployments/dc9a1b42c1f5d3fe', config_id='257759e1-a04f-4ef1-9ca1-35afe1610b04', config_name='gpt-4o_autogenerated', deployment_id='dc9a1b42c1f5d3fe', model_name='gpt-4o', created_at=datetime.datetime(2025, 5, 27, 5, 56, 9, tzinfo=datetime.timezone.utc), additonal_parameters={}, custom_prediction_suffix=None), Deployment(url='https://api.ai.prod-ap11.ap-southeast-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d07481757a2f3028', config_id='c880f6a8-1d06-44f0-ad1f-e5450bae45b3', config_name='text-embedding-3-large_autogenerated', deployment_id='d07481757a2f3028', model_name='text-embedding-3-large', created_at=datetime.datetime(2025, 2, 16, 5, 21, 49, tzinfo=datetime.timezone.utc), additonal_parameters={}, custom_prediction_suffix=None), Deployment(url='https://api.ai.prod-ap11.ap-southeast-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d1b2f6e26d8b479d', config_id='3373eadf-d675-4990-aa7b-6dcf11fdd558', config_name='anthropic--claude-3.5-sonnet_autogenerated', deployment_id='d1b2f6e26d8b479d', model_name='anthropic--claude-3.5-sonnet', created_at=datetime.datetime(2025, 1, 22, 11, 11, 5, tzinfo=datetime.timezone.utc), additonal_parameters={}, custom_prediction_suffix=None)]
+   2025-06-01T04:42:47.03+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:47,037 - INFO - [Deployment(url='https://api.ai.prod-ap11.ap-southeast-1.aws.ml.hana.ondemand.com/v2/inference/deployments/dc9a1b42c1f5d3fe', config_id='257759e1-a04f-4ef1-9ca1-35afe1610b04', config_name='gpt-4o_autogenerated', deployment_id='dc9a1b42c1f5d3fe', model_name='gpt-4o', created_at=datetime.datetime(2025, 5, 27, 5, 56, 9, tzinfo=datetime.timezone.utc), additonal_parameters={}, custom_prediction_suffix=None), Deployment(url='https://api.ai.prod-ap11.ap-southeast-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d07481757a2f3028', config_id='c880f6a8-1d06-44f0-ad1f-e5450bae45b3', config_name='text-embedding-3-large_autogenerated', deployment_id='d07481757a2f3028', model_name='text-embedding-3-large', created_at=datetime.datetime(2025, 2, 16, 5, 21, 49, tzinfo=datetime.timezone.utc), additonal_parameters={}, custom_prediction_suffix=None), Deployment(url='https://api.ai.prod-ap11.ap-southeast-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d1b2f6e26d8b479d', config_id='3373eadf-d675-4990-aa7b-6dcf11fdd558', config_name='anthropic--claude-3.5-sonnet_autogenerated', deployment_id='d1b2f6e26d8b479d', model_name='anthropic--claude-3.5-sonnet', created_at=datetime.datetime(2025, 1, 22, 11, 11, 5, tzinfo=datetime.timezone.utc), additonal_parameters={}, custom_prediction_suffix=None)]
+   2025-06-01T04:42:47.03+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:47 - earnings_analysis - INFO - db_connection.py:176 - Embedding model initialized successfully
+   2025-06-01T04:42:47.03+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:47,037 - INFO - Embedding model initialized successfully
+   2025-06-01T04:42:47.24+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:47 - earnings_analysis - INFO - db_connection.py:112 - Schema set to GenAI_Earnings_Call_1
+   2025-06-01T04:42:47.24+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:47,239 - INFO - Schema set to GenAI_Earnings_Call_1
+   2025-06-01T04:42:47.24+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:47 - earnings_analysis - INFO - db_connection.py:113 - Database connection established successfully
+   2025-06-01T04:42:47.24+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:47,240 - INFO - Database connection established successfully
+   2025-06-01T04:42:47.24+0000 [APP/PROC/WEB/0] ERR /home/vcap/app/db_connection.py:194: LangChainDeprecationWarning: This class is deprecated and will be removed in a future version. Please use HanaDB from the langchain_hana package instead. See https://github.com/SAP/langchain-integration-for-sap-hana-cloud for details.
+   2025-06-01T04:42:47.24+0000 [APP/PROC/WEB/0] ERR transcript_store = HanaDB(
+   2025-06-01T04:42:47.38+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:47 - earnings_analysis - INFO - db_connection.py:218 - Vector stores initialized successfully
+   2025-06-01T04:42:47.38+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:47,389 - INFO - Vector stores initialized successfully
+   2025-06-01T04:42:47.39+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:47 - earnings_analysis - INFO - db_connection.py:245 - Transcript vector store loaded with 257 documents
+   2025-06-01T04:42:47.39+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:47,399 - INFO - Transcript vector store loaded with 257 documents
+   2025-06-01T04:42:47.40+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:47 - earnings_analysis - INFO - db_connection.py:251 - Non-transcript vector store (PDFs) loaded with 0 documents
+   2025-06-01T04:42:47.40+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:47,404 - INFO - Non-transcript vector store (PDFs) loaded with 0 documents
+   2025-06-01T04:42:47.40+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:47 - earnings_analysis - WARNING - db_connection.py:253 - No documents found in the non-transcript vector store (PDFs)!
+   2025-06-01T04:42:47.40+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:47,405 - WARNING - No documents found in the non-transcript vector store (PDFs)!
+   2025-06-01T04:42:47.41+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:47 - earnings_analysis - INFO - db_connection.py:257 - Excel non-transcript vector store loaded with 0 documents
+   2025-06-01T04:42:47.41+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:47,409 - INFO - Excel non-transcript vector store loaded with 0 documents
+   2025-06-01T04:42:47.41+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:47 - earnings_analysis - WARNING - db_connection.py:259 - No documents found in the Excel non-transcript vector store!
+   2025-06-01T04:42:47.41+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:47,410 - WARNING - No documents found in the Excel non-transcript vector store!
+   2025-06-01T04:42:47.41+0000 [APP/PROC/WEB/0] ERR 2025-06-01 04:42:47,410 - INFO - All vector stores loaded successfully

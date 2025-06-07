@@ -89,7 +89,7 @@ except requests.exceptions.HTTPError as e:
         raise
 #-------------------------------- READ HANA DB Configuration -------------------------------------
 # Step 2: Get the destination details by passing name and token
-dest_HDB = 'EARNINGS_HDB_SCB' # make sure this is the correct destination name at btp account.
+dest_HDB = 'EARNINGS_HDB_SAP' # make sure this is the correct destination name at btp account.
 hana_dest_details = fetch_destination_details(
     destination_service_credentials['dest_base_url'],
     name=dest_HDB,
@@ -161,7 +161,7 @@ def initialize_aic_credentials():
     global GV_AIC_CREDENTIALS#, AIC_BASE_URL, AIC_CLIENTID, AIC_CLIENTSECRET, AIC_AUTH_URL, AIC_RESOURCE_GROUP
     
     try:
-        dest_AIC = "EARNINGS_AIC_SCB"
+        dest_AIC = "EARNINGS_AIC_SAP"
         aicore_details = fetch_destination_details(
             destination_service_credentials['dest_base_url'],
             dest_AIC,

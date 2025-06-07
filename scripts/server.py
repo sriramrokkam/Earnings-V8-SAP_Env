@@ -57,8 +57,6 @@ def cleanup_directories():
             except Exception as e:
                 logger.error(f"Failed to clean up {dir_path}: {e}")
 
-atexit.register(cleanup_directories)
-
 # Configure logging with rotation
 log_file_path = os.path.join(logs_dir, "earnings_analysis.log")
 handler = RotatingFileHandler(log_file_path, maxBytes=50 * 1024 * 1024, backupCount=5)
@@ -69,6 +67,7 @@ logger.addHandler(handler)
 # ---------------------------- XSUAA Authentication Setup ----------------------------
 """
 XSUAA authentication is enforced on protected endpoints using the @require_auth decorator.
+"""
 
 vcap_services = os.environ.get("VCAP_SERVICES")
 
@@ -412,6 +411,7 @@ def generate_embeddings():
 
 
     logger.info("Step 15: Embedding generation process completed successfully")
+    cleanup_directories()
     return jsonify({"message": "Embeddings generated successfully"}), 200
 
 if __name__ == '__main__':

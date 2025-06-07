@@ -1,0 +1,14 @@
+#clientSecret=<< Existing password/certificate removed on export >>
+#
+#Sat Jun 07 09:27:41 UTC 2025
+tokenServiceURLType=Dedicated
+resourceGroup=default
+Description=Earnings App AIC
+clientId=sb-367079b3-3023-4300-8c56-7f05b812bbe5\!b122220|aicore\!b164
+ORCHESTRATION_SERVICE_URL=https\://api.ai.prod.us-east-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d0fd3a10a3acf690
+tokenServiceURL=https\://sap-build-training-hcd2uswp.authentication.us10.hana.ondemand.com/oauth/token
+URL=https\://api.ai.prod.us-east-1.aws.ml.hana.ondemand.com
+Name=EARNINGS_AIC_SAP
+Type=HTTP
+Authentication=OAuth2ClientCredentials
+ProxyType=Internet

@@ -17,7 +17,8 @@ from api_client import download_embedding_files, update_completed_files
 from destination_srv import get_destination_service_credentials, generate_token, fetch_destination_details,extract_hana_credentials,extract_aicore_credentials
 from xsuaa_srv import get_xsuaa_credentials, verify_jwt_token, require_auth
 from fastapi import HTTPException  # Ensure HTTPException is imported for error handling
-
+import shutil
+import atexit
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -44,6 +45,20 @@ os.makedirs(documents_dir, exist_ok=True)
 os.makedirs(images_dir, exist_ok=True)
 os.makedirs(logs_dir, exist_ok=True)
 
+# at exit, clean up all the files in the directory. 
+
+# Cleanup function to remove directories after program exits
+def cleanup_directories():
+    for dir_path in [documents_dir, images_dir, logs_dir]:
+        if os.path.exists(dir_path):
+            try:
+                shutil.rmtree(dir_path)
+                logger.info(f"Cleaned up directory: {dir_path}")
+            except Exception as e:
+                logger.error(f"Failed to clean up {dir_path}: {e}")
+
+atexit.register(cleanup_directories)
+
 # Configure logging with rotation
 log_file_path = os.path.join(logs_dir, "earnings_analysis.log")
 handler = RotatingFileHandler(log_file_path, maxBytes=50 * 1024 * 1024, backupCount=5)
@@ -54,15 +69,6 @@ logger.addHandler(handler)
 # ---------------------------- XSUAA Authentication Setup ----------------------------
 """
 XSUAA authentication is enforced on protected endpoints using the @require_auth decorator.
-- The XSUAA credentials are loaded from VCAP_SERVICES and stored in the Flask app context as 'uaa_xsuaa_credentials'.
-- The decorator (from xsuaa_srv.py) checks for a Bearer token in the Authorization header and validates it using the credentials.
-- If the token is missing, invalid, or lacks the required scope, a 401/403 error is returned.
-- Example usage:
-    @app.route('/api/chat', methods=['POST'])
-    @require_auth
-    def chat():
-        ...
-"""
 
 vcap_services = os.environ.get("VCAP_SERVICES")
 
@@ -346,7 +352,7 @@ def generate_embeddings():
         images_dir=images_dir,
         image_extensions=IMAGE_EXTENSIONS
     )
-    
+
     # downloaded_files = [
     # "/home/vcap/app/Documents/standard-chartered-plc-q1-2025-presentation.pdf"
     # ]
@@ -396,12 +402,14 @@ def generate_embeddings():
             allowed_extensions=ALLOWED_EXTENSIONS
         )
         logger.info("Step 13: File statuses updated successfully")
+
     else:
         logger.warning(f"Step 14: Some files failed to generate embeddings. Failed files: {failed_files}")
         return jsonify({
             "message": "Embeddings generated with some failures",
             "failed_files": failed_files
         }), 206  # Partial success
+
 
     logger.info("Step 15: Embedding generation process completed successfully")
     return jsonify({"message": "Embeddings generated successfully"}), 200

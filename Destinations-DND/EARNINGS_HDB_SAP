@@ -1,0 +1,13 @@
+#Password=<< Existing password/certificate removed on export >>
+#
+#Sat Jun 07 09:28:09 UTC 2025
+schema=DBADMIN
+tokenServiceURLType=Dedicated
+Type=HTTP
+Description=Earnings App HDB
+User=DBADMIN
+Authentication=BasicAuthentication
+Port=443
+ProxyType=Internet
+URL=https\://d93a8739-44a8-4845-bef3-8ec724dea2ce.hana.prod-us10.hanacloud.ondemand.com
+Name=EARNINGS_HDB_SAP

@@ -32,35 +32,35 @@ except requests.exceptions.HTTPError as e:
         raise
 
 #-------------------------------- READ CAP Configuration -------------------------------------
-try:
-    dest_AIC = "EARNINGS_XSUAA"
-    cap_details = fetch_destination_details(
-        destination_service_credentials['dest_base_url'],
-        dest_AIC,
-        oauth_token
-    )
-    logger.info("CAP Destination Details fetched successfully")
-    CAP_CREDENTIALS = extract_cap_credentials(cap_details)
-    logger.info(f"CAP Credentials: {CAP_CREDENTIALS}")
+# try:
+#     dest_AIC = "EARNINGS_XSUAA"
+#     cap_details = fetch_destination_details(
+#         destination_service_credentials['dest_base_url'],
+#         dest_AIC,
+#         oauth_token
+#     )
+#     logger.info("CAP Destination Details fetched successfully")
+#     CAP_CREDENTIALS = extract_cap_credentials(cap_details)
+#     logger.info(f"CAP Credentials: {CAP_CREDENTIALS}")
 
-except Exception as e:
-    logger.error(f"Error initializing CAP credentials: {str(e)}")
+# except Exception as e:
+#     logger.error(f"Error initializing CAP credentials: {str(e)}")
 
-EMBEDDING_API_BASE_URL = CAP_CREDENTIALS['cap_base_url'] + "/odata/v4/earning-upload-srv/EmbeddingFiles"
-AUTH_URL = CAP_CREDENTIALS['cap_auth_url']
-CLIENT_ID = CAP_CREDENTIALS['cap_clientid']
-CLIENT_SECRET = CAP_CREDENTIALS['cap_clientsecret']
+# EMBEDDING_API_BASE_URL = CAP_CREDENTIALS['cap_base_url'] + "/odata/v4/earning-upload-srv/EmbeddingFiles"
+# AUTH_URL = CAP_CREDENTIALS['cap_auth_url']
+# CLIENT_ID = CAP_CREDENTIALS['cap_clientid']
+# CLIENT_SECRET = CAP_CREDENTIALS['cap_clientsecret']
 
-logger.info("CLIENT_ID", CLIENT_ID);
-logger.info("AUTH_URL", AUTH_URL);
+# logger.info("CLIENT_ID", CLIENT_ID);
+# logger.info("AUTH_URL", AUTH_URL);
 
 
-# **** End of Code ***#
+# # **** End of Code ***#
 
-# EMBEDDING_API_BASE_URL = "https://standard-chartered-bank-core-foundational-12982zqn-gena4b53cb41.cfapps.ap11.hana.ondemand.com/odata/v4/earning-upload-srv/EmbeddingFiles"
-# AUTH_URL = "https://core-foundational-12982zqn.authentication.ap11.hana.ondemand.com/oauth/token"
-# CLIENT_ID = "sb-earning-upload!t5156"
-# CLIENT_SECRET = "2db20f6f-b4cd-4f9a-b27f-a8f6e15a3c23$CLy31CAgGjo9EpJOQB-HOegl8fxEypDWetJDHPB0Bac="
+EMBEDDING_API_BASE_URL = "https://s4hanad-s-development-40qq74qu-dev-earning-upload-srv.cfapps.us10.hana.ondemand.com/odata/v4/earning-upload-srv/EmbeddingFiles"
+AUTH_URL = "https://development-40qq74qu.authentication.us10.hana.ondemand.com/oauth/token"
+CLIENT_ID = "sb-earning-upload!t111507"
+CLIENT_SECRET = "316ed684-d170-4fbc-8b1f-d17d39dd2f37$1Ys99tjFNy-VafIDh7-JQB5P7x6wvWOOQ9rP9g3pu0k="
 
 
 # Configure logging

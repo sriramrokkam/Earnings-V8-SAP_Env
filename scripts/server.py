@@ -6,7 +6,6 @@ from logging.handlers import RotatingFileHandler
 import json
 import requests
 from flask import Flask, request, jsonify
-from flask_cors import CORS
 from dotenv import load_dotenv
 from hdbcli import dbapi  # SAP HANA client library
 from env_config import DEF_SCHEMA
@@ -27,10 +26,6 @@ load_dotenv()
 # Set up logger
 logger = logging.getLogger('EarningsAnalysis')
 logger.setLevel(logging.INFO)
-
-#CORS(app)
-logger.info('CORS Disabled')
-
 
 # Set directories
 LOCALPATH = os.getenv('LOCALPATH', os.getcwd())
@@ -94,7 +89,7 @@ except requests.exceptions.HTTPError as e:
         raise
 #-------------------------------- READ HANA DB Configuration -------------------------------------
 # Step 2: Get the destination details by passing name and token
-dest_HDB = 'EARNINGS_HDB' # make sure this is the correct destination name at btp account.
+dest_HDB = 'EARNINGS_HDB_SCB' # make sure this is the correct destination name at btp account.
 hana_dest_details = fetch_destination_details(
     destination_service_credentials['dest_base_url'],
     name=dest_HDB,
@@ -166,7 +161,7 @@ def initialize_aic_credentials():
     global GV_AIC_CREDENTIALS#, AIC_BASE_URL, AIC_CLIENTID, AIC_CLIENTSECRET, AIC_AUTH_URL, AIC_RESOURCE_GROUP
     
     try:
-        dest_AIC = "EARNINGS_AIC"
+        dest_AIC = "EARNINGS_AIC_SCB"
         aicore_details = fetch_destination_details(
             destination_service_credentials['dest_base_url'],
             dest_AIC,
@@ -339,13 +334,17 @@ def generate_embeddings():
     """Endpoint to generate embeddings for uploaded files."""
     logger.info("Step 1: Starting embedding generation process")
 
-    # Step 1: Download files
+    # Step 1: SR ( Temp) Download files
     logger.info("Step 2: Downloading files for embedding generation")
-    downloaded_files = download_embedding_files(
-        documents_dir=documents_dir,
-        images_dir=images_dir,
-        image_extensions=IMAGE_EXTENSIONS
-    )
+    ##SOC: Directly Folder
+    # downloaded_files = download_embedding_files(
+    #     documents_dir=documents_dir,
+    #     images_dir=images_dir,
+    #     image_extensions=IMAGE_EXTENSIONS
+    # )
+    downloaded_files = ["/home/vcap/app/Documents/standard-chartered-plc-q1-2025-presentation.pdf"]
+    ### EOC: SR (Temp) Directory Folder 
+
     logger.info(f"Step 3: Downloaded files: {downloaded_files}")
 
     # Explicitly check if the list is empty

@@ -9,10 +9,8 @@ from gen_ai_hub.proxy.langchain.init_models import init_embedding_model
 from logger_setup import get_logger
 from dotenv import load_dotenv
 from env_config import TABLE_NAMES, EMBEDDING_MODEL
+from destination_srv import get_destination_service_credentials, generate_token, fetch_destination_details, extract_hana_credentials
 #from server import GV_AIC_CREDENTIALS
-
-# Load environment variables from .env file
-#load_dotenv()
 logger = get_logger()  # Initialize logger for this module
 
 # Global variable for HANA DB configuration (dictionary)
@@ -21,16 +19,10 @@ HANA_CREDENTIALS = None  # Will hold the full credentials dict
 ORCHESTRATION_SERVICE_URL = os.environ.get('ORCHESTRATION_SERVICE_URL')   
 
 # --- HANA CREDENTIALS FROM DESTINATION SERVICES ---
-from destination_srv import get_destination_service_credentials, generate_token, fetch_destination_details, extract_hana_credentials, extract_aicore_credentials
 
 # Load VCAP_SERVICES from environment (Cloud Foundry service bindings)
 vcap_services = os.environ.get("VCAP_SERVICES")
 logger.info("===>DB_Connections => GET HANA CREDENTIALS FROM DESTINATION SERVICES<===")
-
-# Extract destination service credentials from VCAP_SERVICES
-# This will provide the auth URL, client ID/secret, and base URL for destination service
-
-# Parse destination service credentials
 destination_service_credentials = get_destination_service_credentials(vcap_services)
 logger.info(f"Destination Service Credentials: {destination_service_credentials}")
 
@@ -108,7 +100,7 @@ class ConnectionPool:
                 password=HANA_CREDENTIALS['password']
             )
             cursor = conn.cursor()
-            #cursor.execute(f"SET SCHEMA {HANA_CREDENTIALS['schema']}")
+            cursor.execute(f"SET SCHEMA {HANA_CREDENTIALS['schema']}")
             logger.info("Database connection established successfully")
             return conn
         except Exception as e:

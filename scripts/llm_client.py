@@ -54,7 +54,7 @@ except requests.exceptions.HTTPError as e:
 AIC_CREDENTIALS = None
 
 # Get AIC details from Dest Services
-dest_AIC = "EARNINGS_AIC_SAP"
+dest_AIC = "EARNINGS_AIC_SCB"
 aicore_details = fetch_destination_details(
     destination_service_credentials['dest_base_url'],
     dest_AIC,

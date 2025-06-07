@@ -341,14 +341,15 @@ def generate_embeddings():
 
     # Step 1: Download files
     logger.info("Step 2: Downloading files for embedding generation")
-    # downloaded_files = download_embedding_files(
-    #     documents_dir=documents_dir,
-    #     images_dir=images_dir,
-    #     image_extensions=IMAGE_EXTENSIONS
-    # )
-    downloaded_files = [
-    "/home/vcap/app/Documents/standard-chartered-plc-q1-2025-presentation.pdf"
-    ]
+    downloaded_files = download_embedding_files(
+        documents_dir=documents_dir,
+        images_dir=images_dir,
+        image_extensions=IMAGE_EXTENSIONS
+    )
+    
+    # downloaded_files = [
+    # "/home/vcap/app/Documents/standard-chartered-plc-q1-2025-presentation.pdf"
+    # ]
     
     logger.info(f"Step 3: Downloaded files: {downloaded_files}")
 

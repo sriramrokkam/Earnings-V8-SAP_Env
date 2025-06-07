@@ -11,7 +11,6 @@ from gen_ai_hub.orchestration.models.azure_content_filter import AzureContentFil
 from logger_setup import get_logger
 from typing import Optional, List, Dict
 from destination_srv import get_destination_service_credentials, generate_token, fetch_destination_details,extract_aicore_credentials
-from db_connection import ORCHESTRATION_SERVICE_URL
 
 
 # Load environment variables
@@ -76,6 +75,7 @@ proxy_client = GenAIHubProxyClient(
                                 )
 ORCHESTRATION_SERVICE_URL = AIC_CREDENTIALS['ORCHESTRATION_SERVICE_URL']
 #ORCHESTRATION_SERVICE_URL = "https://api.ai.prod-ap11.ap-southeast-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d53b8af17648a85c"
+print("ORCH_URL", ORCHESTRATION_SERVICE_URL)
 ORCHESTRATION_SERVICE = OrchestrationService(api_url=ORCHESTRATION_SERVICE_URL, proxy_client=proxy_client)  
 logger.info(f" AIC Credentials: {AIC_CREDENTIALS}")
 

@@ -12,7 +12,8 @@ TABLE_NAMES = {
 
 # Embedding model
 EMBEDDING_MODEL = "text-embedding-3-large"
-HANA_DB_API ="3cb8ff87-b67f-4b68-8106-e297566641ef.hana.prod-ap11.hanacloud.ondemand.com"
+
+#HANA_DB_API ="3cb8ff87-b67f-4b68-8106-e297566641ef.hana.prod-ap11.hanacloud.ondemand.com"
 
 # Bedrock model configuration
 MODEL_ID = "anthropic--claude-3.5-sonnet"
@@ -62,6 +63,6 @@ def get_documents_dir_path():
     return os.path.join(load_config()['local_path'], "Documents")
 
 def get_default_schema():
-    return os.getenv('DEF_SCHEMA', 'GENAI_EARNINGS_CALL_1')
+    return os.getenv('DEF_SCHEMA', 'DBADMIN')
 
 DEF_SCHEMA = get_default_schema()

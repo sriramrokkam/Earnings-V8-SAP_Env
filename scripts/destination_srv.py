@@ -60,7 +60,7 @@ def extract_hana_credentials(config):
         'user': dc.get('User'),
         'password': dc.get('Password'),
         'port': dc.get('Port'),
-       # 'schema': dc.get('schema')  # <-- This is where the schema is extracted and set in HANA_CREDENTIALS
+        'schema': dc.get('schema')  # <-- This is where the schema is extracted and set in HANA_CREDENTIALS
     }
 
 # Step 5: Extract AI Core connection details

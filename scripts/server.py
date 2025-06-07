@@ -94,7 +94,7 @@ except requests.exceptions.HTTPError as e:
         raise
 #-------------------------------- READ HANA DB Configuration -------------------------------------
 # Step 2: Get the destination details by passing name and token
-dest_HDB = 'EARNINGS_HDB' # make sure this is the correct destination name at btp account.
+dest_HDB = 'EARNINGS_HDB_SAP' # make sure this is the correct destination name at btp account.
 hana_dest_details = fetch_destination_details(
     destination_service_credentials['dest_base_url'],
     name=dest_HDB,
@@ -166,7 +166,7 @@ def initialize_aic_credentials():
     global GV_AIC_CREDENTIALS#, AIC_BASE_URL, AIC_CLIENTID, AIC_CLIENTSECRET, AIC_AUTH_URL, AIC_RESOURCE_GROUP
     
     try:
-        dest_AIC = "EARNINGS_AIC"
+        dest_AIC = "EARNINGS_AIC_SAP"
         aicore_details = fetch_destination_details(
             destination_service_credentials['dest_base_url'],
             dest_AIC,
@@ -341,11 +341,15 @@ def generate_embeddings():
 
     # Step 1: Download files
     logger.info("Step 2: Downloading files for embedding generation")
-    downloaded_files = download_embedding_files(
-        documents_dir=documents_dir,
-        images_dir=images_dir,
-        image_extensions=IMAGE_EXTENSIONS
-    )
+    # downloaded_files = download_embedding_files(
+    #     documents_dir=documents_dir,
+    #     images_dir=images_dir,
+    #     image_extensions=IMAGE_EXTENSIONS
+    # )
+    downloaded_files = [
+    "/home/vcap/app/Documents/standard-chartered-plc-q1-2025-presentation.pdf"
+    ]
+    
     logger.info(f"Step 3: Downloaded files: {downloaded_files}")
 
     # Explicitly check if the list is empty

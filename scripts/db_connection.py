@@ -40,7 +40,7 @@ except Exception as e:
 
 # Get the destination details for the HANA DB by passing name and token
 if oauth_token:
-    dest_HDB = 'EARNINGS_HDB_SAP'  # Destination name for HANA DB (update as needed)
+    dest_HDB = 'EARNINGS_HDB_SCB'  # Destination name for HANA DB (update as needed)
 
     hana_dest_details = fetch_destination_details(
         uri=destination_service_credentials['dest_base_url'],
